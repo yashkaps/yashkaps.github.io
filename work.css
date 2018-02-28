@@ -1,0 +1,89 @@
+/*CREDITS TO UNSPLASH*/
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
+
+* {
+  margin:0;
+  padding:0;
+  list-style:none;
+  text-decoration:none;
+  box-sizing:border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /*background: black;*/
+  /*background: url(https://ak8.picdn.net/shutterstock/videos/23047162/thumb/1.jpg);*/
+  background: url(https://ak0.picdn.net/shutterstock/videos/26916550/thumb/1.jpg);
+  font-family: 'Josefin Slab', serif;
+}
+
+.perspective {
+  width: 100%;
+  height: 100%;
+  perspective:1000px;
+  transform-style: preserve-3d;
+}
+
+.wrapper {
+  transform-style: preserve-3d;
+  margin: 0 auto;
+  width:100%;
+  height:100%;
+  transition: 1s all ease-in-out;
+  -webkit-transition: 1s all ease-in-out;
+  display:flex;
+}
+
+.wrapper li {
+  flex-grow: 1;
+  /*opacity:0.8;*/
+  padding:100px 0;
+  font-size:56px;
+  transition: 1s all ease-in-out;
+  -webkit-transition: 1s all ease-in-out;
+  text-align:center;
+  color:#fff;
+  cursor:pointer;
+  background-size:cover !important;
+}
+
+.wrapper li:nth-of-type(1) {
+  background: url(https://images.unsplash.com/photo-1441260038675-7329ab4cc264?q=80&fm=jpg&s=b1c4700b303adfae30ee320aca07328a) no-repeat center center;
+}
+.wrapper li:nth-of-type(2) {
+  background: url(https://images.unsplash.com/photo-1436564989038-18b9958df72b?q=80&fm=jpg&s=63f82ffb3fa7effd45c79e0379dbdee6) no-repeat center center;
+}
+.wrapper li:nth-of-type(3) {
+  background: url(https://images.unsplash.com/photo-1436397543931-01c4a5162bdb?q=80&fm=jpg&s=29b3d57347ca107a06e5cfe262f24ef1) no-repeat center center;
+}
+.wrapper li:nth-of-type(4) {
+  background: url(https://images.unsplash.com/photo-1437623889155-075d40e2e59f?q=80&fm=jpg&s=51e3e297c2171808e0610d00b970bf7b) no-repeat center center;
+}
+.wrapper li:nth-of-type(5) {
+  background: url(https://images.unsplash.com/photo-1428954376791-d9ae785dfb2d?q=80&fm=jpg&s=2b9da0d2264050e32ad8ac8213a76a78) no-repeat center center;
+}
+.wrapper li:nth-of-type(6) {
+  background: url(https://images.unsplash.com/photo-1422433555807-2559a27433bd?q=80&fm=jpg&s=f4a3f331eed09d297e2a71e3dfea402d) no-repeat center center;
+}
+
+.plier {
+  transform: rotateX(20deg);
+  transform-origin:bottom;
+}
+
+.wrapper li.active {
+  transition-delay:1.2s;
+}
+
+.active{
+  transform: rotateX(0deg);
+  transform-origin:bottom;
+  flex-grow: 30 !important;
+  cursor:default;
+  opacity:1 !important;
+}
