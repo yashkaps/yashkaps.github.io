@@ -15,7 +15,7 @@ window.onload = function() {
     document.getElementById("content").innerHTML =
       "<br><br><h2>League Event Match Results</h2><br><br>";
 
-    fetch("../data/" + id + "_score.txt")
+    fetch("https://yashkaps.github.io/ttleague/data/" + id + "_score.txt")
       .then(function(response) {
         return response.text();
       })
@@ -37,7 +37,7 @@ window.onload = function() {
         document.getElementById("content").innerHTML += result;
       });
 
-    fetch("../data/" + id + "_rating.txt")
+    fetch("https://yashkaps.github.io/ttleague/data/" + id + "_rating.txt")
       .then(function(response) {
         return response.text();
       })
