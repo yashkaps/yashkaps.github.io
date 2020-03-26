@@ -1,6 +1,7 @@
 window.onload = function() {
   function initial() {
     var result = "<br><br><br>";
+    result += "<h2>League Event Match Results</h2><br><br>";
     result +=
       '<a id="0326" href="#">March 26, 2020</a><br />' +
       '<a id="0327" href="#">March 27, 2020</a><br />' +
@@ -11,6 +12,9 @@ window.onload = function() {
   }
 
   function return_table(id) {
+    document.getElementById("content").innerHTML =
+      "<br><br><h2>League Event Match Results</h2><br><br>";
+
     fetch("../data/" + id + "_score.txt")
       .then(function(response) {
         return response.text();
@@ -30,7 +34,7 @@ window.onload = function() {
           result += "</tr>";
         }
 
-        document.getElementById("content").innerHTML = result;
+        document.getElementById("content").innerHTML += result;
       });
 
     fetch("../data/" + id + "_rating.txt")
@@ -38,6 +42,8 @@ window.onload = function() {
         return response.text();
       })
       .then(data => {
+        document.getElementById("content").innerHTML +=
+          "<br><br><br><h2>Rating Changes</h2>";
         var result = "<table>";
         result +=
           "<tr> <th>Name</th> <th>Begin Rating</th> <th>End Rating</th> </tr>";
@@ -52,7 +58,7 @@ window.onload = function() {
           }
           result += "</tr>";
         }
-        document.getElementById("content").innerHTML += "<br><br><br>";
+        document.getElementById("content").innerHTML += "<br><br>";
 
         var back_to_home =
           '<br><br><br><a id="initial" href="#">Back to home</a>';
