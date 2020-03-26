@@ -64,7 +64,7 @@ td {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   z-index: 1;
-  min-height: calc(100vh - 78px);
+  min-height: calc(100vh - 118px);
 }
 
 table {
