@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  /* float: left; */
+  overflow: hidden;
+  display: block;
+  background: rgba(0, 0, 0, 0.85);
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar h1 {
+  float: left;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(251, 54, 54);
+}
+
+.navbar img {
+  float: right;
+  width: 15rem;
+}
+
+table,
+th,
+td {
+  min-width: 10vw;
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+.content {
+  background: white;
+  width: 70vw;
+  padding: 20px;
+  background-attachment: fixed;
+  opacity: 0.8;
+  position: relative;
+  top: 78px;
+  left: 15vw;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+table {
+  width: 70vw;
+  text-align: left;
+}

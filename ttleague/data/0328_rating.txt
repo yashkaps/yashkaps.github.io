@@ -1,0 +1,6 @@
+yash	1000	2000
+tom	0	-2000
+telon	500	400
+michael	2000	1000
+darwin	2000	1000
+crystal	1000	2000
