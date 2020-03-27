@@ -73,3 +73,8 @@ table {
   text-align: left;
   border-collapse: collapse;
 }
+
+th {
+  background: rgba(200,200,200,0.8);
+  color: rgb(230, 80, 80);
+}
