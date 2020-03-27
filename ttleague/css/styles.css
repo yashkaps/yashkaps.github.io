@@ -74,7 +74,12 @@ table {
   border-collapse: collapse;
 }
 
-table th {
-  background: rgba(200,200,200,0.8);
-  color: rgb(230, 80, 80);
+th {
+  background: rgb(212, 201, 201);
+  color: rgb(255, 0, 0);
+}
+
+td {
+  text-transform:capitalize;
+  background: rgba(237, 234, 234, 0.8);
 }
