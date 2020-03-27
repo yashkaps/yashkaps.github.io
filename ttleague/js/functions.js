@@ -3,12 +3,12 @@ window.onload = function() {
     var result = "<br><br><br>";
     result += "<h2>League Event Match Results</h2><br><br>";
     result +=
-      '<a id="0326" href="#">March 26, 2020</a><br />' +
-      '<a id="0327" href="#">March 27, 2020</a><br />' +
-      '<a id="0328" href="#">March 28, 2020</a><br />' +
-      '<a id="0329" href="#">March 29, 2020</a><br />';
+      '<a id="0326" href="#">March 26, 2020</a><br /><br>' +
+      '<a id="0327" href="#">March 27, 2020</a><br /><br>' +
+      '<a id="0328" href="#">March 28, 2020</a><br /><br>' +
+      '<a id="0329" href="#">March 29, 2020</a><br /><br>';
     document.getElementById("content").innerHTML = result;
-    run();
+    addingEventListeners();
   }
 
   function return_table(id) {
@@ -19,7 +19,7 @@ window.onload = function() {
       .then(function(response) {
         return response.text();
       })
-      .then(data => {
+      .then(function(data) {
         var result = "<table>";
         result += "<tr> <th>Winner</th> <th>Loser</th> <th>Score</th> </tr>";
         var length = data.length;
@@ -41,7 +41,7 @@ window.onload = function() {
       .then(function(response) {
         return response.text();
       })
-      .then(data => {
+      .then(function(data) {
         document.getElementById("content").innerHTML +=
           "<br><br><br><h2>Rating Changes</h2>";
         var result = "<table>";
@@ -70,7 +70,7 @@ window.onload = function() {
   }
 
   initial();
-  function run() {
+  function addingEventListeners() {
     document.getElementById("0326").addEventListener("click", function() {
       return_table("0326");
     });
