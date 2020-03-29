@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+title {
+  max-width: 50vw;
+}
+
 body {
   background: url("https://yashkaps.github.io/ttleague/images/background.jpg");
   background-repeat: no-repeat;
