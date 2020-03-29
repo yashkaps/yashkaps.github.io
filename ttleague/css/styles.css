@@ -3,9 +3,6 @@
   padding: 0;
 }
 
-.navbar h1 {
-  max-width: 50vw;
-}
 
 body {
   background: url("https://yashkaps.github.io/ttleague/images/background.jpg");
@@ -31,6 +28,7 @@ body {
 }
 
 .navbar h1 {
+  max-width: 50vw;
   float: left;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 2rem;
