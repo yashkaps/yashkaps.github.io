@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+
 body {
   background: url("https://yashkaps.github.io/ttleague/images/background.jpg");
   background-repeat: no-repeat;
@@ -43,6 +44,7 @@ body {
 }
 
 .navbar h1 {
+  max-width: 50vw;
   float: left;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 2rem;
@@ -90,7 +92,18 @@ table {
   border-collapse: collapse;
 }
 
+<<<<<<< HEAD
 table th {
   background: rgb(200, 200, 200);
   color: rgb(230, 80, 80);
+=======
+th {
+  background: rgb(212, 201, 201);
+  color: rgb(255, 0, 0);
+}
+
+td {
+  text-transform:capitalize;
+  background: rgba(237, 234, 234, 0.8);
+>>>>>>> 84bf7982126b85ed860f2591ae7f1a89b2573a86
 }
