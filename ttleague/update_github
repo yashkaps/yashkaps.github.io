@@ -5,4 +5,4 @@ set now = date
 
 git add --all
 git commit -m "Commit at $now"
-git push -u origin master
+echo "yashkaps\nThegamer04" | (git push -u origin master)
