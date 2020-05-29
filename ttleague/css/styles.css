@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background: url("https://yashkaps.github.io/ttleague/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+
+#always {
+  background: white;
+  font-size: 1.2rem;
+  width: 70vw;
+  padding: 20px;
+  background-attachment: fixed;
+  opacity: 0.8;
+  /* position: relative;
+  top: 78px;
+  left: 12vw; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  z-index: 2;
+  /* min-height: calc(100vh - 118px); */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  /* float: left; */
+  overflow: hidden;
+  display: block;
+  background: rgba(0, 0, 0, 0.85);
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar h1 {
+  max-width: 50vw;
+  float: left;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(251, 54, 54);
+}
+
+.navbar img {
+  float: right;
+  width: 15rem;
+}
+
+table,
+th,
+td {
+  min-width: 10vw;
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+.content {
+  background: white;
+  font-size: 1.2rem;
+  width: 70vw;
+  padding: 20px;
+  background-attachment: fixed;
+  opacity: 0.8;
+  position: relative;
+  top: 78px;
+  left: 12vw;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  z-index: 1;
+  min-height: calc(100vh - 118px);
+}
+
+table {
+  min-width: 50vw;
+  max-width: 60vw;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+<<<<<<< HEAD
+table th {
+  background: rgb(200, 200, 200);
+  color: rgb(230, 80, 80);
+=======
+th {
+  background: rgb(212, 201, 201);
+  color: rgb(255, 0, 0);
+}
+
+td {
+  text-transform:capitalize;
+  background: rgba(237, 234, 234, 0.8);
+>>>>>>> 84bf7982126b85ed860f2591ae7f1a89b2573a86
+}
