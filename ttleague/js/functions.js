@@ -33,7 +33,7 @@ window.onload = function () {
       <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
     result += `<tr> <th id="player_sort">Player ▲</th> <th id="rating_sort">Rating ↕</th> </tr>`;
-    var sorted_ratings = ratings.slice().sort((a, b) => { (a.name).localeCompare(b.name) });
+    var sorted_ratings = ratings.slice().sort((a, b) => (a.name).localeCompare(b.name));
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -61,7 +61,7 @@ window.onload = function () {
       <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
     result += `<tr> <th id="player_sort">Player ▼</th> <th id="rating_sort">Rating ↕</th> </tr>`;
-    var sorted_ratings = ratings.slice().sort((a, b) => { -(a.name).localeCompare(b.name) });
+    var sorted_ratings = ratings.slice().sort((a, b) => (b.name).localeCompare(a.name));
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -92,7 +92,7 @@ window.onload = function () {
       <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
     result += `<tr> <th id="player_sort">Player ↕</th> <th id="rating_sort">Rating ▲</th> </tr>`;
-    var sorted_ratings = ratings.slice().sort((a, b) => { (a.rating) - (b.rating) });
+    var sorted_ratings = ratings.slice().sort((a, b) => (a.rating) - (b.rating));
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -120,7 +120,7 @@ window.onload = function () {
       <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
     result += `<tr> <th id="player_sort">Player ↕</th> <th id="rating_sort">Rating ▼</th> </tr>`;
-    var sorted_ratings = ratings.slice().sort((a, b) => { -((a.rating) - (b.rating)) });
+    var sorted_ratings = ratings.slice().sort((a, b) => (b.rating) - (a.rating));
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
