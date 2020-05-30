@@ -24,6 +24,8 @@ window.onload = function () {
     addingEventListeners();
   }
 
+  //====================================================================================
+  // functions for displaying tables sorted by name
   // function to display players and their ratings in with names in ascending order
   function return_table_players_az() {
     document.getElementById("content").innerHTML =
@@ -75,6 +77,8 @@ window.onload = function () {
   }
 
 
+  //====================================================================================
+  // functions for displaying tables sorted by rating
   // function to display players and their ratings in with rating in ascending order
   function return_table_players_rup() {
     document.getElementById("content").innerHTML =
@@ -107,7 +111,7 @@ window.onload = function () {
       <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
     result += `<tr> <th>Player</th> <th id="rating_sort">Rating ▼</th> </tr>`;
-    var sorted_ratings = ratings.sort((a, b) => { -(a.rating).localeCompare(b.rating) });
+    var sorted_ratings = ratings.sort((a, b) => { -((a.rating).localeCompare(b.rating)) });
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
