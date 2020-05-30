@@ -32,7 +32,8 @@ window.onload = function () {
         "</td></tr>";
     }
     result += "</table>";
-    result += `<br><a href="#" onclick="initial()">Back to Home</a><br>`;
+    result += '<br><br><br><a id="initial" href="#">Back to home</a>';
+    document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("content").innerHTML += result;
   }
 
