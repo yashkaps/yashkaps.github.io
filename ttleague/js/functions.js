@@ -19,12 +19,12 @@ window.onload = function () {
     addingEventListeners();
   }
 
-  function return_table_players() {
+  function return_table_players_az() {
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>
       <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
-    result += "<tr> <th>Player</th> <th>Rating</th> </tr>";
+    result += `<tr> <th id="player_sort">Player ▲</th> <th>Rating</th> </tr>`;
     var player_names = Object.keys(ratings).sort();
     var len = player_names.length;
     for (var i = 0; i < len - 1; i++) {
@@ -40,6 +40,31 @@ window.onload = function () {
     document.getElementById("content").innerHTML += result;
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
+    document.getElementById("player_sort").addEventListener("click", return_table_players_za);
+  }
+
+  function return_table_players_za() {
+    document.getElementById("content").innerHTML =
+      `<a id="initial" href="#">Back to home</a>
+      <br><br><h2>Player Ratings</h2><br><br>`;
+    var result = `<table id="ratings">`;
+    result += `<tr> <th id="player_sort">Player ▼</th> <th>Rating</th> </tr>`;
+    var player_names = Object.keys(ratings).sort().reverse();
+    var len = player_names.length;
+    for (var i = 0; i < len - 1; i++) {
+      result +=
+        "\n<tr> <td> " +
+        player_names[i] +
+        `</td><td class="rating_col"> ` +
+        ratings[player_names[i]] +
+        "</td></tr>";
+    }
+    result += "</table>";
+    result += '<br><br><a id="initial2" href="#">Back to home</a>';
+    document.getElementById("content").innerHTML += result;
+    document.getElementById("initial").addEventListener("click", initial);
+    document.getElementById("initial2").addEventListener("click", initial);
+    document.getElementById("player_sort").addEventListener("click", return_table_players_az);
   }
 
   function return_table_matches(id) {
@@ -103,7 +128,7 @@ window.onload = function () {
   function addingEventListeners() {
     document
       .getElementById("player_list")
-      .addEventListener("click", return_table_players);
+      .addEventListener("click", return_table_players_az);
     // document.getElementById("0327").addEventListener("click", function () {
     //   return_table_matches("0327");
     // });
