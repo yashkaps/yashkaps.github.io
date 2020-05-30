@@ -31,14 +31,14 @@ window.onload = function () {
       <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
     result += `<tr> <th id="player_sort">Player ▲</th> <th>Rating</th> </tr>`;
-    var player_names = Object.keys(ratings).sort();
-    var len = player_names.length;
+    var sorted_ratings = ratings.sort((a, b) => { (a.name).localeCompare(b.name) });
+    var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
         "\n<tr> <td> " +
-        player_names[i] +
+        sorted_ratings[i].name +
         `</td><td class="rating_col"> ` +
-        ratings[player_names[i]] +
+        sorted_ratings[i].rating +
         "</td></tr>";
     }
     result += "</table>";
@@ -56,14 +56,14 @@ window.onload = function () {
       <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
     result += `<tr> <th id="player_sort">Player ▼</th> <th>Rating</th> </tr>`;
-    var player_names = Object.keys(ratings).sort().reverse();
-    var len = player_names.length;
+    var sorted_ratings = ratings.sort((a, b) => { -(a.name).localeCompare(b.name) });
+    var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
         "\n<tr> <td> " +
-        player_names[i] +
+        sorted_ratings[i].name +
         `</td><td class="rating_col"> ` +
-        ratings[player_names[i]] +
+        sorted_ratings[i].rating +
         "</td></tr>";
     }
     result += "</table>";
@@ -72,6 +72,57 @@ window.onload = function () {
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("player_sort").addEventListener("click", return_table_players_az);
+  }
+
+
+  // function to display players and their ratings in with rating in ascending order
+  function return_table_players_rup() {
+    document.getElementById("content").innerHTML =
+      `<a id="initial" href="#">Back to home</a>
+      <br><br><h2>Player Ratings</h2><br><br>`;
+    var result = `<table id="ratings">`;
+    result += `<tr> <th>Player</th> <th id="rating_sort">Rating ▲</th> </tr>`;
+    var sorted_ratings = ratings.sort((a, b) => { (a.rating).localeCompare(b.rating) });
+    var len = sorted_ratings.length;
+    for (var i = 0; i < len; i++) {
+      result +=
+        "\n<tr> <td> " +
+        sorted_ratings[i].name +
+        `</td><td class="rating_col"> ` +
+        sorted_ratings[i].rating +
+        "</td></tr>";
+    }
+    result += "</table>";
+    result += '<br><br><a id="initial2" href="#">Back to home</a>';
+    document.getElementById("content").innerHTML += result;
+    document.getElementById("initial").addEventListener("click", initial);
+    document.getElementById("initial2").addEventListener("click", initial);
+    document.getElementById("rating_sort").addEventListener("click", return_table_players_rdown);
+  }
+
+  // function to display players and their ratings in with ratings in descending order
+  function return_table_players_rdown() {
+    document.getElementById("content").innerHTML =
+      `<a id="initial" href="#">Back to home</a>
+      <br><br><h2>Player Ratings</h2><br><br>`;
+    var result = `<table id="ratings">`;
+    result += `<tr> <th>Player</th> <th id="rating_sort">Rating ▼</th> </tr>`;
+    var sorted_ratings = ratings.sort((a, b) => { -(a.rating).localeCompare(b.rating) });
+    var len = sorted_ratings.length;
+    for (var i = 0; i < len; i++) {
+      result +=
+        "\n<tr> <td> " +
+        sorted_ratings[i].name +
+        `</td><td class="rating_col"> ` +
+        sorted_ratings[i].rating +
+        "</td></tr>";
+    }
+    result += "</table>";
+    result += '<br><br><a id="initial2" href="#">Back to home</a>';
+    document.getElementById("content").innerHTML += result;
+    document.getElementById("initial").addEventListener("click", initial);
+    document.getElementById("initial2").addEventListener("click", initial);
+    document.getElementById("rating_sort").addEventListener("click", return_table_players_rup);
   }
 
   // function to return match info for a specific date
@@ -154,7 +205,7 @@ window.onload = function () {
   //======================================================================
   // Code starts here
 
-  var ratings = {};
+  var ratings = [];
 
   fetch("https://yashkaps.github.io/ttleague/data/roster.csv")
     .then(function (response) {
@@ -166,7 +217,7 @@ window.onload = function () {
 
       for (var i = 0; i < lines.length - 1; i++) {
         var res = lines[i].split(",");
-        ratings[res[0]] = res[1];
+        ratings.push({ name: res[0], rating: res[1] });
       }
     });
   console.log("hello world");
