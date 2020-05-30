@@ -30,8 +30,10 @@ window.onload = function () {
   function return_table_players_az() {
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>
-      <br><br><h2>Player Ratings</h2><br><br>`;
-    var result = `<table id="ratings">`;
+      <br><br><h2>Player Ratings</h2><br>`;
+    var result = "";
+    result += `<input type="text" id="search_box" onkeyup="filter_table()" placeholder="Search for players">`;
+    result += `<br><br><table id="ratings">`;
     result += `<tr> <th id="player_sort">Player ▲</th> <th id="rating_sort">Rating ↕</th> </tr>`;
     var sorted_ratings = ratings.slice().sort((a, b) => (a.name).localeCompare(b.name));
     var len = sorted_ratings.length;

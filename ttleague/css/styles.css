@@ -108,3 +108,28 @@ td {
 #player_sort:hover, #rating_sort:hover {
   cursor: pointer;
 }
+
+#search_box {
+  width: 92%;
+  font-size: 1.2em;
+  background: rgb(166, 187, 196);
+  padding: 1% 2% 1% 5%; /* Add some padding */
+  /* border: 1px solid #ddd; Add a grey border */
+  background-image: url("https://yashkaps.github.io/ttleague/images/search-icon2.jpg"); /* Add a search icon to input */
+  /* background-position: 1% 1%;  */
+  /* background-repeat: no-repeat; */
+}
+
+/* for search box placeholder */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(212, 38, 38);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(212, 38, 38);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(212, 38, 38);
+}
