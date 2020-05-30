@@ -33,7 +33,7 @@ window.onload = function () {
     result += `<tr> <th id="player_sort">Player ▲</th> <th>Rating</th> </tr>`;
     var player_names = Object.keys(ratings).sort();
     var len = player_names.length;
-    for (var i = 0; i < len - 1; i++) {
+    for (var i = 0; i < len; i++) {
       result +=
         "\n<tr> <td> " +
         player_names[i] +
@@ -58,7 +58,7 @@ window.onload = function () {
     result += `<tr> <th id="player_sort">Player ▼</th> <th>Rating</th> </tr>`;
     var player_names = Object.keys(ratings).sort().reverse();
     var len = player_names.length;
-    for (var i = 0; i < len - 1; i++) {
+    for (var i = 0; i < len; i++) {
       result +=
         "\n<tr> <td> " +
         player_names[i] +

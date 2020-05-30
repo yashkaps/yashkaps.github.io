@@ -4,5 +4,5 @@
 set now = date
 
 git add --all
-git commit -m "Commit at $now"
+git commit -m "Commit at ($now)"
 git push -u origin master
