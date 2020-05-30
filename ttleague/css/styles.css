@@ -104,3 +104,7 @@ td {
   border-color: white;
   background-color: rgb(0, 0, 0);
 }
+
+#player_sort:hover, #rating_sort:hover {
+  cursor: pointer;
+}
