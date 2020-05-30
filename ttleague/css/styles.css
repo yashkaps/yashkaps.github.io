@@ -84,15 +84,15 @@ td {
 }
 
 table {
-  min-width: 50vw;
-  max-width: 60vw;
+  min-width: 100%;
+  max-width: 100%;
   text-align: left;
   border-collapse: collapse;
 }
 
 th {
   background: rgb(200, 200, 200);
-  color: rgb(230, 80, 80);
+  color: rgb(255, 23, 23);
 }
 
 td {

@@ -18,7 +18,8 @@ window.onload = function () {
 
   function return_table_players() {
     document.getElementById("content").innerHTML =
-      "<br><br><h2>Player Ratings</h2><br><br>";
+      `<a id="initial" href="#">Back to home</a>
+      <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
     result += "<tr> <th>Player</th> <th>Rating</th> </tr>";
     var player_names = Object.keys(ratings).sort();
@@ -32,7 +33,9 @@ window.onload = function () {
         "</td></tr>";
     }
     result += "</table>";
+    result += '<br><br><a id="initial" href="#">Back to home</a>';
     document.getElementById("content").innerHTML += result;
+    document.getElementById("initial").addEventListener("click", initial);
   }
 
   function return_table_matches(id) {
