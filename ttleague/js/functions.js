@@ -32,8 +32,8 @@ window.onload = function () {
       `<a id="initial" href="#">Back to home</a>
       <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
-    result += `<tr> <th id="player_sort">Player ▲</th> <th>Rating</th> </tr>`;
-    var sorted_ratings = ratings.sort((a, b) => { (a.name).localeCompare(b.name) });
+    result += `<tr> <th id="player_sort">Player ▲</th> <th id="rating_sort">Rating ↕</th> </tr>`;
+    var sorted_ratings = ratings.slice().sort((a, b) => { (a.name).localeCompare(b.name) });
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -49,6 +49,9 @@ window.onload = function () {
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("player_sort").addEventListener("click", return_table_players_za);
+    document.getElementById("rating_sort").addEventListener("click", return_table_players_rup);
+    console.log('az');
+    console.log(sorted_ratings);
   }
 
   // function to display players and their ratings in with names in descending order
@@ -57,8 +60,8 @@ window.onload = function () {
       `<a id="initial" href="#">Back to home</a>
       <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
-    result += `<tr> <th id="player_sort">Player ▼</th> <th>Rating</th> </tr>`;
-    var sorted_ratings = ratings.sort((a, b) => { -(a.name).localeCompare(b.name) });
+    result += `<tr> <th id="player_sort">Player ▼</th> <th id="rating_sort">Rating ↕</th> </tr>`;
+    var sorted_ratings = ratings.slice().sort((a, b) => { -(a.name).localeCompare(b.name) });
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -74,6 +77,9 @@ window.onload = function () {
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("player_sort").addEventListener("click", return_table_players_az);
+    document.getElementById("rating_sort").addEventListener("click", return_table_players_rup);
+    console.log('za');
+    console.log(sorted_ratings);
   }
 
 
@@ -85,8 +91,8 @@ window.onload = function () {
       `<a id="initial" href="#">Back to home</a>
       <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
-    result += `<tr> <th>Player</th> <th id="rating_sort">Rating ▲</th> </tr>`;
-    var sorted_ratings = ratings.sort((a, b) => { (a.rating).localeCompare(b.rating) });
+    result += `<tr> <th id="player_sort">Player ↕</th> <th id="rating_sort">Rating ▲</th> </tr>`;
+    var sorted_ratings = ratings.slice().sort((a, b) => { (a.rating) - (b.rating) });
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -102,6 +108,9 @@ window.onload = function () {
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("rating_sort").addEventListener("click", return_table_players_rdown);
+    document.getElementById("player_sort").addEventListener("click", return_table_players_az);
+    console.log('rup');
+    console.log(sorted_ratings);
   }
 
   // function to display players and their ratings in with ratings in descending order
@@ -110,8 +119,8 @@ window.onload = function () {
       `<a id="initial" href="#">Back to home</a>
       <br><br><h2>Player Ratings</h2><br><br>`;
     var result = `<table id="ratings">`;
-    result += `<tr> <th>Player</th> <th id="rating_sort">Rating ▼</th> </tr>`;
-    var sorted_ratings = ratings.sort((a, b) => { -((a.rating).localeCompare(b.rating)) });
+    result += `<tr> <th id="player_sort">Player ↕</th> <th id="rating_sort">Rating ▼</th> </tr>`;
+    var sorted_ratings = ratings.slice().sort((a, b) => { -((a.rating) - (b.rating)) });
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -127,8 +136,12 @@ window.onload = function () {
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("rating_sort").addEventListener("click", return_table_players_rup);
+    document.getElementById("player_sort").addEventListener("click", return_table_players_az);
+    console.log('rdown');
+    console.log(sorted_ratings);
   }
 
+  //===========================================================================================
   // function to return match info for a specific date
   // to be modified
   function return_table_matches(id) {
