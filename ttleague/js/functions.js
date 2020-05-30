@@ -33,9 +33,10 @@ window.onload = function () {
         "</td></tr>";
     }
     result += "</table>";
-    result += '<br><br><a id="initial" href="#">Back to home</a>';
+    result += '<br><br><a id="initial2" href="#">Back to home</a>';
     document.getElementById("content").innerHTML += result;
     document.getElementById("initial").addEventListener("click", initial);
+    document.getElementById("initial2").addEventListener("click", initial);
   }
 
   function return_table_matches(id) {
