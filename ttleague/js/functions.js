@@ -1,6 +1,11 @@
+
+// only do things after the page loads
+// function calls using document fail otherwise
 window.onload = function () {
+
+  // function to set up the initial display
   function initial() {
-    var result = ""; //"<br><br><br>";
+    var result = "";
     result += `<h2>Univeristy of Maryland Club Table Tennis!</h2>
       <br><h4>
       Join us every Monday and Tuesday for free play and Thursday for Weekly
@@ -19,6 +24,7 @@ window.onload = function () {
     addingEventListeners();
   }
 
+  // function to display players and their ratings in with names in ascending order
   function return_table_players_az() {
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>
@@ -43,6 +49,7 @@ window.onload = function () {
     document.getElementById("player_sort").addEventListener("click", return_table_players_za);
   }
 
+  // function to display players and their ratings in with names in descending order
   function return_table_players_za() {
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>
@@ -67,6 +74,8 @@ window.onload = function () {
     document.getElementById("player_sort").addEventListener("click", return_table_players_az);
   }
 
+  // function to return match info for a specific date
+  // to be modified
   function return_table_matches(id) {
     document.getElementById("content").innerHTML =
       "<br><br><h2>League Event Match Results</h2><br><br>";
@@ -125,6 +134,7 @@ window.onload = function () {
     return false;
   }
 
+  // adds event listeners
   function addingEventListeners() {
     document
       .getElementById("player_list")
@@ -141,7 +151,7 @@ window.onload = function () {
   }
 
   // functions above
-  //======================================================================//
+  //======================================================================
   // Code starts here
 
   var ratings = {};
