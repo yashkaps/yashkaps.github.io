@@ -7,8 +7,8 @@ window.onload = function () {
         League Night!!
       </h4> <br>`;
     result += `<h4>For any inquiries, contact us at <a href="mailto:terrapintabletennis@gmail.com">terrapintabletennis@gmail.com</a> or
-     reach out to us through <a href="https://www.facebook.com/umdtabletennis/">our Facebook page</a>. Officially join the club on <a href="https://
-     terplink.umd.edu/organization/terrapin-table-tennis">Terplink</a> today!!</h4><br><br><br>`;
+     reach out to us through <a href="https://www.facebook.com/umdtabletennis/">our Facebook page</a>. Officially join the club on <a 
+     href="https://terplink.umd.edu/organization/terrapin-table-tennis">Terplink</a> today!!</h4><br><br><br>`;
     result += `<h2><a id="player_list" href="#">Search for Players</a></h2><br><br>`;
     result += `<h2><a id="results" href="#">League Event Match Results</a></h2><br><br>`;
     // result += `<a id="0326" href="#">March 26, 2020</a><br /><br>
