@@ -1,21 +1,41 @@
 window.onload = function () {
   function initial() {
-    var result = "<br><br><br>";
-    result += `<h2>Univeristy of Maryland Table Tennis Club!</h2>
-      <h3>
+    var result = ""; //"<br><br><br>";
+    result += `<h2>Univeristy of Maryland Club Table Tennis!</h2>
+      <h4>
       Join us every Monday and Tuesday for free play and Thursday for Weekly
         League Night!!
-      </h3 >`;
-    result += "<h2>League Event Match Results</h2><br><br>";
-    result += `<a id="0326" href="#">March 26, 2020</a><br /><br>
-      <a id="0327" href="#">March 27, 2020</a><br /><br>
-      <a id="0328" href="#">March 28, 2020</a><br /><br>
-      <a id="0329" href="#">March 29, 2020</a><br /><br>`;
+      </h4> <br><br><br>`;
+    result += `<h2><a id="player_list" href="#">Search for Players</a></h2><br><br>`;
+    result += `<h2><a id="results" href="#">League Event Match Results</a></h2><br><br>`;
+    // result += `<a id="0326" href="#">March 26, 2020</a><br /><br>
+    //   <a id="0327" href="#">March 27, 2020</a><br /><br>
+    //   <a id="0328" href="#">March 28, 2020</a><br /><br>
+    //   <a id="0329" href="#">March 29, 2020</a><br /><br>`;
     document.getElementById("content").innerHTML = result;
     addingEventListeners();
   }
 
-  function return_table(id) {
+  function return_table_players() {
+    document.getElementById("content").innerHTML =
+      "<br><br><h2>Player Ratings</h2><br><br>";
+    var result = `<table id="ratings">`;
+    result += "<tr> <th>Player</th> <th>Rating</th> </tr>";
+    var player_names = Object.keys(ratings).sort();
+    var len = player_names.length;
+    for (var i = 0; i < len - 1; i++) {
+      result +=
+        "\n<tr> <td> " +
+        player_names[i] +
+        `</td><td class="rating_col"> ` +
+        ratings[player_names[i]] +
+        "</td></tr>";
+    }
+    result += "</table>";
+    document.getElementById("content").innerHTML += result;
+  }
+
+  function return_table_matches(id) {
     document.getElementById("content").innerHTML =
       "<br><br><h2>League Event Match Results</h2><br><br>";
 
@@ -24,7 +44,7 @@ window.onload = function () {
         return response.text();
       })
       .then(function (data) {
-        var result = "<table>";
+        var result = `<table id="matches">`;
         result += "<tr> <th>Winner</th> <th>Loser</th> <th>Score</th> </tr>";
         var length = data.length;
         var lines = data.split("\n");
@@ -73,19 +93,42 @@ window.onload = function () {
     return false;
   }
 
-  initial();
   function addingEventListeners() {
-    document.getElementById("0326").addEventListener("click", function () {
-      return_table("0326");
-    });
-    document.getElementById("0327").addEventListener("click", function () {
-      return_table("0327");
-    });
-    document.getElementById("0328").addEventListener("click", function () {
-      return_table("0328");
-    });
-    document.getElementById("0329").addEventListener("click", function () {
-      return_table("0329");
-    });
+    document
+      .getElementById("player_list")
+      .addEventListener("click", return_table_players);
+    // document.getElementById("0327").addEventListener("click", function () {
+    //   return_table_matches("0327");
+    // });
+    // document.getElementById("0328").addEventListener("click", function () {
+    //   return_table_matches("0328");
+    // });
+    // document.getElementById("0329").addEventListener("click", function () {
+    //   return_table_matches("0329");
+    // });
   }
+
+  // functions above
+  //======================================================================//
+  // Code starts here
+
+  var ratings = {};
+
+  fetch("https://yashkaps.github.io/ttleague/data/roster.csv")
+    .then(function (response) {
+      return response.text();
+    })
+    .then(function (data) {
+      var length = data.length;
+      var lines = data.split("\n");
+
+      for (var i = 0; i < lines.length - 1; i++) {
+        var res = lines[i].split(",");
+        ratings[res[0]] = res[1];
+      }
+    });
+  console.log("hello world");
+  console.log(ratings);
+
+  initial();
 };
