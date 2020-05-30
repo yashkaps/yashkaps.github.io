@@ -2,7 +2,7 @@ window.onload = function () {
   function initial() {
     var result = ""; //"<br><br><br>";
     result += `<h2>Univeristy of Maryland Club Table Tennis!</h2>
-      <h4>
+      <br><h4>
       Join us every Monday and Tuesday for free play and Thursday for Weekly
         League Night!!
       </h4> <br>`;
