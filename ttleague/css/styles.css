@@ -84,8 +84,8 @@ td {
 }
 
 table {
-  min-width: 50vw;
-  max-width: 60vw;
+  min-width: 100%;
+  max-width: 100%;
   text-align: left;
   border-collapse: collapse;
 }
