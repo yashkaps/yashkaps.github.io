@@ -25,9 +25,8 @@ window.onload = function () {
   }
 
   //====================================================================================
-  // functions for displaying tables sorted by name
-  // function to display players and their ratings in with names in ascending order
-  function return_table_players_az() {
+  // display the common part of the ratings page
+  function return_table_players_common(idx) {
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>
       <br><br><h2>Player Ratings</h2><br>`;
@@ -35,9 +34,21 @@ window.onload = function () {
     result += `<div style="display: inline-grid">
     <div style="grid-column: 1/1"><h3>&#x1F50E</h3></div>
     <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players"></div></div>`;
-    result += `<br><br><table id="ratings">`;
-    result += `<tr> <th id="player_sort">Player ▲</th> <th id="rating_sort">Rating ↕</th> </tr>`;
-    var sorted_ratings = ratings.slice().sort(sort_fxns[0]);
+    result += `<br><br><table id="ratings"></table>`;
+    result += `<br><br><a id="initial2" href="#">Back to home</a>`;
+    document.getElementById("content").innerHTML += result;
+    player_table_fxns[idx]();
+  }
+
+  //====================================================================================
+  // functions for displaying tables sorted by name
+  // function to display players and their ratings in with names in ascending order
+  function return_table_players_az() {
+    var result = "";
+    // result += `<br><br><table id="ratings">`; 
+    result += `<tr> <th id="player_sort">` + player_head[0] + `</th> <th id="rating_sort">` +
+      rating_head[0] + `</th> </tr>`;
+    var sorted_ratings = filter.slice().sort(sort_fxns[0]);
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -48,29 +59,24 @@ window.onload = function () {
         "</td></tr>";
     }
     result += "</table>";
-    result += '<br><br><a id="initial2" href="#">Back to home</a>';
-    document.getElementById("content").innerHTML += result;
+    document.getElementById("ratings").innerHTML = result;
+    // document.getElementById("content").innerHTML += '<br><br><a id="initial2" href="#">Back to home</a>';
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("player_sort").addEventListener("click", return_table_players_za);
     document.getElementById("rating_sort").addEventListener("click", return_table_players_rup);
     document.getElementById("search_box").addEventListener("keyup", () => filter_table(0));
     console.log('az');
-    console.log(sorted_ratings);
+    // console.log(sorted_ratings);
   }
 
   // function to display players and their ratings in with names in descending order
   function return_table_players_za() {
-    document.getElementById("content").innerHTML =
-      `<a id="initial" href="#">Back to home</a>
-      <br><br><h2>Player Ratings</h2><br><br>`;
     var result = "";
-    result += `<div style="display: inline-grid">
-    <div style="grid-column: 1/1"><h3>&#x1F50E</h3></div>
-    <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players"></div></div>`;
-    result += `<br><br><table id="ratings">`;
-    result += `<tr> <th id="player_sort">Player ▼</th> <th id="rating_sort">Rating ↕</th> </tr>`;
-    var sorted_ratings = ratings.slice().sort(sort_fxns[1]);
+    // result += `<br><br><table id="ratings">`; 
+    result += `<tr> <th id="player_sort">` + player_head[1] + `</th> <th id="rating_sort">` +
+      rating_head[1] + `</th> </tr>`;
+    var sorted_ratings = filter.slice().sort(sort_fxns[1]);
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -81,15 +87,15 @@ window.onload = function () {
         "</td></tr>";
     }
     result += "</table>";
-    result += '<br><br><a id="initial2" href="#">Back to home</a>';
-    document.getElementById("content").innerHTML += result;
+    document.getElementById("ratings").innerHTML = result;
+    // document.getElementById("content").innerHTML += '<br><br><a id="initial2" href="#">Back to home</a>';
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("player_sort").addEventListener("click", return_table_players_az);
     document.getElementById("rating_sort").addEventListener("click", return_table_players_rup);
     document.getElementById("search_box").addEventListener("keyup", () => filter_table(1));
     console.log('za');
-    console.log(sorted_ratings);
+    // console.log(sorted_ratings);
   }
 
 
@@ -97,16 +103,12 @@ window.onload = function () {
   // functions for displaying tables sorted by rating
   // function to display players and their ratings in with rating in ascending order
   function return_table_players_rup() {
-    document.getElementById("content").innerHTML =
-      `<a id="initial" href="#">Back to home</a>
-      <br><br><h2>Player Ratings</h2><br><br>`;
+
     var result = "";
-    result += `<div style="display: inline-grid">
-    <div style="grid-column: 1/1"><h3>&#x1F50E</h3></div>
-    <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players"></div></div>`;
-    result += `<br><br><table id="ratings">`;
-    result += `<tr> <th id="player_sort">Player ↕</th> <th id="rating_sort">Rating ▲</th> </tr>`;
-    var sorted_ratings = ratings.slice().sort(sort_fxns[2]);
+    // result += `<br><br><table id="ratings">`; 
+    result += `<tr> <th id="player_sort">` + player_head[2] + `</th> <th id="rating_sort">` +
+      rating_head[2] + `</th> </tr>`;
+    var sorted_ratings = filter.slice().sort(sort_fxns[2]);
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -117,29 +119,25 @@ window.onload = function () {
         "</td></tr>";
     }
     result += "</table>";
-    result += '<br><br><a id="initial2" href="#">Back to home</a>';
-    document.getElementById("content").innerHTML += result;
+    document.getElementById("ratings").innerHTML = result;
+    // document.getElementById("content").innerHTML += '<br><br><a id="initial2" href="#">Back to home</a>';
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("rating_sort").addEventListener("click", return_table_players_rdown);
     document.getElementById("player_sort").addEventListener("click", return_table_players_az);
     document.getElementById("search_box").addEventListener("keyup", () => filter_table(2));
     console.log('rup');
-    console.log(sorted_ratings);
+    // console.log(sorted_ratings);
   }
 
   // function to display players and their ratings in with ratings in descending order
   function return_table_players_rdown() {
-    document.getElementById("content").innerHTML =
-      `<a id="initial" href="#">Back to home</a>
-      <br><br><h2>Player Ratings</h2><br><br>`;
+
     var result = "";
-    result += `<div style="display: inline-grid">
-    <div style="grid-column: 1/1"><h3>&#x1F50E</h3></div>
-    <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players"></div></div>`;
-    result += `<br><br><table id="ratings">`;
-    result += `<tr> <th id="player_sort">Player ↕</th> <th id="rating_sort">Rating ▼</th> </tr>`;
-    var sorted_ratings = ratings.slice().sort(sort_fxns[3]);
+    // result += `<br><br><table id="ratings">`;
+    result += `<tr> <th id="player_sort">` + player_head[3] + `</th> <th id="rating_sort">` +
+      rating_head[3] + `</th> </tr>`;
+    var sorted_ratings = filter.slice().sort(sort_fxns[3]);
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -150,36 +148,48 @@ window.onload = function () {
         "</td></tr>";
     }
     result += "</table>";
-    result += '<br><br><a id="initial2" href="#">Back to home</a>';
-    document.getElementById("content").innerHTML += result;
+    document.getElementById("ratings").innerHTML = result;
+    // document.getElementById("content").innerHTML += '<br><br><a id="initial2" href="#">Back to home</a>';
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("rating_sort").addEventListener("click", return_table_players_rup);
     document.getElementById("player_sort").addEventListener("click", return_table_players_az);
     document.getElementById("search_box").addEventListener("keyup", () => filter_table(3));
     console.log('rdown');
-    console.log(sorted_ratings);
+    // console.log(sorted_ratings);
   }
 
   //===========================================================================================
   // function for dynamic filter table
   function filter_table(idx) {
     var query = document.getElementById("search_box").value;
-    filter = ratings.filter(a => a.name.toLowerCase().includes(query.toLowerCase()));
-    var result = "";
-    result += `<tr> <th id="player_sort">Player</th> <th id="rating_sort">Rating</th> </tr>`;
-    var sorted_ratings = filter.slice().sort(sort_fxns[idx]);
-    var len = sorted_ratings.length;
-    for (var i = 0; i < len; i++) {
-      result +=
-        "\n<tr> <td> " +
-        sorted_ratings[i].name +
-        `</td><td class="rating_col"> ` +
-        sorted_ratings[i].rating +
-        "</td></tr>";
+    if (query.length == 0) {
+      filter = ratings;
+      return_table_players_common(idx);
+    } else {
+      filter = ratings.filter(a => a.name.toLowerCase().includes(query.toLowerCase()));
+      var result = "";
+      result += `<tr> <th id="player_sort">` + player_head[idx] + `</th> <th id="rating_sort">` +
+        rating_head[idx] + `</th> </tr>`;
+      var sorted_ratings = filter.slice().sort(sort_fxns[idx]);
+      var len = sorted_ratings.length;
+      for (var i = 0; i < len; i++) {
+        result +=
+          "\n<tr> <td> " +
+          sorted_ratings[i].name +
+          `</td><td class="rating_col"> ` +
+          sorted_ratings[i].rating +
+          "</td></tr>";
+      }
+      document.getElementById("ratings").innerHTML = result;
+      document.getElementById("initial").addEventListener("click", initial);
+      document.getElementById("initial2").addEventListener("click", initial);
+      document.getElementById("search_box").addEventListener("keyup", () => filter_table(idx));
+      document.getElementById("rating_sort").addEventListener("click", () =>
+        (idx != 2) ? return_table_players_rup() : return_table_players_rdown());
+      document.getElementById("player_sort").addEventListener("click", () =>
+        (idx != 0) ? return_table_players_az() : return_table_players_za());
     }
-    document.getElementById("ratings").innerHTML = result;
-    filter = ratings.slice();
   }
 
   //===========================================================================================
@@ -247,7 +257,7 @@ window.onload = function () {
   function addingEventListeners() {
     document
       .getElementById("player_list")
-      .addEventListener("click", return_table_players_az);
+      .addEventListener("click", () => return_table_players_common(0));
     // document.getElementById("0327").addEventListener("click", function () {
     //   return_table_matches("0327");
     // });
@@ -287,6 +297,15 @@ window.onload = function () {
   sort_fxns.push((a, b) => (b.name).localeCompare(a.name));
   sort_fxns.push((a, b) => (a.rating) - (b.rating));
   sort_fxns.push((a, b) => (b.rating) - (a.rating));
+
+  var player_table_fxns = [];
+  player_table_fxns.push(return_table_players_az);
+  player_table_fxns.push(return_table_players_za);
+  player_table_fxns.push(return_table_players_rup);
+  player_table_fxns.push(return_table_players_rdown);
+
+  var player_head = ["Player ▲", "Player ▼", "Player ↕", "Player ↕"];
+  var rating_head = ["Rating ↕", "Rating ↕", "Rating ▲", "Rating ▼"];
 
   console.log("hello world");
   console.log(sort_fxns);
