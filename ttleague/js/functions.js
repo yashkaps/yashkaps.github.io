@@ -33,7 +33,7 @@ window.onload = function () {
     var result = "";
     result += `<div style="display: inline-grid">
     <div style="grid-column: 1/1"><h3>&#x1F50E</h3></div>
-    <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players"></div></div>`;
+    <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players..."></div></div>`;
     result += `<br><br><table id="ratings"></table>`;
     result += `<br><br><a id="initial2" href="#">Back to home</a>`;
     document.getElementById("content").innerHTML += result;
