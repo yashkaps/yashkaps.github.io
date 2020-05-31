@@ -32,10 +32,12 @@ window.onload = function () {
       `<a id="initial" href="#">Back to home</a>
       <br><br><h2>Player Ratings</h2><br>`;
     var result = "";
-    result += `<input type="text" id="search_box" onkeyup="filter_table()" placeholder="Search for players">`;
+    result += `<div style="display: inline-grid">
+    <div style="grid-column: 1/1"><h3>&#x1F50E</h3></div>
+    <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players"></div></div>`;
     result += `<br><br><table id="ratings">`;
     result += `<tr> <th id="player_sort">Player ▲</th> <th id="rating_sort">Rating ↕</th> </tr>`;
-    var sorted_ratings = ratings.slice().sort((a, b) => (a.name).localeCompare(b.name));
+    var sorted_ratings = ratings.slice().sort(sort_fxns[0]);
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -52,6 +54,7 @@ window.onload = function () {
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("player_sort").addEventListener("click", return_table_players_za);
     document.getElementById("rating_sort").addEventListener("click", return_table_players_rup);
+    document.getElementById("search_box").addEventListener("keyup", () => filter_table(0));
     console.log('az');
     console.log(sorted_ratings);
   }
@@ -61,9 +64,13 @@ window.onload = function () {
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>
       <br><br><h2>Player Ratings</h2><br><br>`;
-    var result = `<table id="ratings">`;
+    var result = "";
+    result += `<div style="display: inline-grid">
+    <div style="grid-column: 1/1"><h3>&#x1F50E</h3></div>
+    <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players"></div></div>`;
+    result += `<br><br><table id="ratings">`;
     result += `<tr> <th id="player_sort">Player ▼</th> <th id="rating_sort">Rating ↕</th> </tr>`;
-    var sorted_ratings = ratings.slice().sort((a, b) => (b.name).localeCompare(a.name));
+    var sorted_ratings = ratings.slice().sort(sort_fxns[1]);
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -80,6 +87,7 @@ window.onload = function () {
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("player_sort").addEventListener("click", return_table_players_az);
     document.getElementById("rating_sort").addEventListener("click", return_table_players_rup);
+    document.getElementById("search_box").addEventListener("keyup", () => filter_table(1));
     console.log('za');
     console.log(sorted_ratings);
   }
@@ -92,9 +100,13 @@ window.onload = function () {
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>
       <br><br><h2>Player Ratings</h2><br><br>`;
-    var result = `<table id="ratings">`;
+    var result = "";
+    result += `<div style="display: inline-grid">
+    <div style="grid-column: 1/1"><h3>&#x1F50E</h3></div>
+    <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players"></div></div>`;
+    result += `<br><br><table id="ratings">`;
     result += `<tr> <th id="player_sort">Player ↕</th> <th id="rating_sort">Rating ▲</th> </tr>`;
-    var sorted_ratings = ratings.slice().sort((a, b) => (a.rating) - (b.rating));
+    var sorted_ratings = ratings.slice().sort(sort_fxns[2]);
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -111,6 +123,7 @@ window.onload = function () {
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("rating_sort").addEventListener("click", return_table_players_rdown);
     document.getElementById("player_sort").addEventListener("click", return_table_players_az);
+    document.getElementById("search_box").addEventListener("keyup", () => filter_table(2));
     console.log('rup');
     console.log(sorted_ratings);
   }
@@ -120,9 +133,13 @@ window.onload = function () {
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>
       <br><br><h2>Player Ratings</h2><br><br>`;
-    var result = `<table id="ratings">`;
+    var result = "";
+    result += `<div style="display: inline-grid">
+    <div style="grid-column: 1/1"><h3>&#x1F50E</h3></div>
+    <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players"></div></div>`;
+    result += `<br><br><table id="ratings">`;
     result += `<tr> <th id="player_sort">Player ↕</th> <th id="rating_sort">Rating ▼</th> </tr>`;
-    var sorted_ratings = ratings.slice().sort((a, b) => (b.rating) - (a.rating));
+    var sorted_ratings = ratings.slice().sort(sort_fxns[3]);
     var len = sorted_ratings.length;
     for (var i = 0; i < len; i++) {
       result +=
@@ -139,8 +156,30 @@ window.onload = function () {
     document.getElementById("initial2").addEventListener("click", initial);
     document.getElementById("rating_sort").addEventListener("click", return_table_players_rup);
     document.getElementById("player_sort").addEventListener("click", return_table_players_az);
+    document.getElementById("search_box").addEventListener("keyup", () => filter_table(3));
     console.log('rdown');
     console.log(sorted_ratings);
+  }
+
+  //===========================================================================================
+  // function for dynamic filter table
+  function filter_table(idx) {
+    var query = document.getElementById("search_box").value;
+    filter = ratings.filter(a => a.name.toLowerCase().includes(query.toLowerCase()));
+    var result = "";
+    result += `<tr> <th id="player_sort">Player</th> <th id="rating_sort">Rating</th> </tr>`;
+    var sorted_ratings = filter.slice().sort(sort_fxns[idx]);
+    var len = sorted_ratings.length;
+    for (var i = 0; i < len; i++) {
+      result +=
+        "\n<tr> <td> " +
+        sorted_ratings[i].name +
+        `</td><td class="rating_col"> ` +
+        sorted_ratings[i].rating +
+        "</td></tr>";
+    }
+    document.getElementById("ratings").innerHTML = result;
+    filter = ratings.slice();
   }
 
   //===========================================================================================
@@ -225,6 +264,7 @@ window.onload = function () {
   // Code starts here
 
   var ratings = [];
+  var filter;
 
   fetch("https://yashkaps.github.io/ttleague/data/roster.csv")
     .then(function (response) {
@@ -239,8 +279,17 @@ window.onload = function () {
         ratings.push({ name: res[0], rating: res[1] });
       }
     });
+
+  filter = ratings;
+
+  var sort_fxns = [];
+  sort_fxns.push((a, b) => (a.name).localeCompare(b.name));
+  sort_fxns.push((a, b) => (b.name).localeCompare(a.name));
+  sort_fxns.push((a, b) => (a.rating) - (b.rating));
+  sort_fxns.push((a, b) => (b.rating) - (a.rating));
+
   console.log("hello world");
-  console.log(ratings);
+  console.log(sort_fxns);
 
   initial();
 };

@@ -110,13 +110,14 @@ td {
 }
 
 #search_box {
-  width: 92%;
+  width: 89%;
   font-size: 1.2em;
-  background: rgb(166, 187, 196);
+  /* background: rgb(166, 187, 196); */
   padding: 1% 2% 1% 5%; /* Add some padding */
   /* border: 1px solid #ddd; Add a grey border */
-  background-image: url("https://yashkaps.github.io/ttleague/images/search-icon2.jpg"); /* Add a search icon to input */
-  /* background-position: 1% 1%;  */
+  /* background-image: url("https://yashkaps.github.io/ttleague/images/search-icon2.jpg"); */
+  background: url("../images/search-icon2.jpg"); 
+  background-position: 1% 1%; 
   /* background-repeat: no-repeat; */
 }
 
