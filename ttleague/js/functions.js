@@ -1,4 +1,3 @@
-
 // only do things after the page loads
 // function calls using document fail otherwise
 window.onload = function () {
@@ -33,10 +32,11 @@ window.onload = function () {
     var result = "";
     result += `<div style="display: inline-grid">
     <div style="grid-column: 1/1"><h3>&#x1F50E</h3></div>
-    <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players..."></div></div>`;
+    <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players..." autofocus></div></div>`;
     result += `<br><br><table id="ratings"></table>`;
     result += `<br><br><a id="initial2" href="#">Back to home</a>`;
     document.getElementById("content").innerHTML += result;
+    document.getElementById("search_box").focus();
     player_table_fxns[idx]();
   }
 
@@ -60,6 +60,7 @@ window.onload = function () {
     }
     result += "</table>";
     document.getElementById("ratings").innerHTML = result;
+    document.getElementById("search_box").focus();
     // document.getElementById("content").innerHTML += '<br><br><a id="initial2" href="#">Back to home</a>';
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
@@ -88,6 +89,7 @@ window.onload = function () {
     }
     result += "</table>";
     document.getElementById("ratings").innerHTML = result;
+    document.getElementById("search_box").focus();
     // document.getElementById("content").innerHTML += '<br><br><a id="initial2" href="#">Back to home</a>';
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
@@ -120,6 +122,7 @@ window.onload = function () {
     }
     result += "</table>";
     document.getElementById("ratings").innerHTML = result;
+    document.getElementById("search_box").focus();
     // document.getElementById("content").innerHTML += '<br><br><a id="initial2" href="#">Back to home</a>';
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
@@ -149,6 +152,7 @@ window.onload = function () {
     }
     result += "</table>";
     document.getElementById("ratings").innerHTML = result;
+    document.getElementById("search_box").focus();
     // document.getElementById("content").innerHTML += '<br><br><a id="initial2" href="#">Back to home</a>';
     document.getElementById("initial").addEventListener("click", initial);
     document.getElementById("initial2").addEventListener("click", initial);
@@ -190,6 +194,7 @@ window.onload = function () {
       document.getElementById("player_sort").addEventListener("click", () =>
         (idx != 0) ? return_table_players_az() : return_table_players_za());
     }
+    document.getElementById("search_box").focus();
   }
 
   //===========================================================================================
