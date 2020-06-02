@@ -253,7 +253,7 @@ window.onload = function () {
 
     console.log("from return_table_matches");
     console.log("id:" + id);
-    fetch("https://yashkaps.github.io/ttleague/data/csv_files/txt_files/" + id + ".csv")
+    fetch("https://yashkaps.github.io/ttleague/data/csv_files/txt_files/" + id + ".txt")
       .then(function (response) {
         return response.text();
       })
