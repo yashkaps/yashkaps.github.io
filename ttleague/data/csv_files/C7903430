@@ -1,0 +1,29 @@
+Name,USATT#,Begin Rating,End Rating,+/-,
+Shubham Agrawal,263887,0,844,844,
+Rithvik Yarlagadda,263883,0,413,413,
+Thomas Brosh,229948,800,808,8,
+Rami Eisenman,263884,0,608,608,
+Jerry Yang,220794,897,910,13,
+Samuel Blumenthal,263886,0,293,293,
+Vaibhav Dixit,263885,0,1045,1045,
+Samuel Dobro,263551,600,542,-58,
+Andrew Zhang,85006,1030,999,-31,
+,,,,,
+,,,,,
+,,,,,
+Winner Name,Winner USATT#,Loser Name,Loser USATT#,Score,+/-
+Shubham Agrawal,263887,Jerry Yang,220794,2-1,13
+Rithvik Yarlagadda,263883,Samuel Blumenthal,263886,2-0,6
+Vaibhav Dixit,263885,Jerry Yang,220794,2-0,3
+Samuel Dobro,263551,Samuel Blumenthal,263886,2-0,0
+Jerry Yang,220794,Andrew Zhang,85006,2-0,25
+Rami Eisenman,263884,Samuel Dobro,263551,2-0,8
+Vaibhav Dixit,263885,Andrew Zhang,85006,2-0,8
+Andrew Zhang,85006,Shubham Agrawal,263887,2-0,2
+Jerry Yang,220794,Thomas Brosh,229948,2-0,4
+Rithvik Yarlagadda,263883,Samuel Dobro,263551,2-1,50
+Vaibhav Dixit,263885,Thomas Brosh,229948,2-0,1
+Rami Eisenman,263884,Samuel Blumenthal,263886,2-0,0
+Rami Eisenman,263884,Rithvik Yarlagadda,263883,2-0,0
+Thomas Brosh,229948,Shubham Agrawal,263887,2-1,13
+Vaibhav Dixit,263885,Shubham Agrawal,263887,2-0,2

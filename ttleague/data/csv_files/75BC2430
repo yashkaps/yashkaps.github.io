@@ -1,0 +1,55 @@
+Name,USATT#,Begin Rating,End Rating,+/-,
+Eugene Liu,229949,0,1001,1001,
+Daniel Schultz,229947,0,705,705,
+Jerry Yang,220794,892,906,14,
+Trueman Phamdo,229946,0,697,697,
+Thomas Brosh,229948,0,806,806,
+Michael Oliver,229914,0,803,803,
+Arush Shah,229944,0,736,736,
+Darwin Ma,90523,1908,1909,1,
+James Poff,229953,0,602,602,
+Ben Johns,229952,0,1699,1699,
+Harvey Sun,229951,0,501,501,
+Andrew Zhang,85006,0,1102,1102,
+Ryan Kushner,220674,902,899,-3,
+Nathan Hsu,33874,2329,2329,0,
+Jason Lee,229945,0,499,499,
+Madhava Paliyam,229954,0,1023,1023,
+Brian Shen,220676,887,887,0,
+Moses Kang,229950,0,442,442,
+,,,,,
+,,,,,
+,,,,,
+Winner Name,Winner USATT#,Loser Name,Loser USATT#,Score,+/-
+Daniel Schultz,229947,James Poff,229953,2-0,4
+Andrew Zhang,85006,Thomas Brosh,229948,2-0,0
+Madhava Paliyam,229954,Harvey Sun,229951,2-0,0
+James Poff,229953,Harvey Sun,229951,2-0,4
+Eugene Liu,229949,Michael Oliver,229914,2-0,1
+Jerry Yang,220794,Arush Shah,229944,2-1,2
+James Poff,229953,Moses Kang,229950,2-0,2
+Madhava Paliyam,229954,Daniel Schultz,229947,2-0,0
+Andrew Zhang,85006,Jerry Yang,220794,2-1,1
+Darwin Ma,90523,Brian Shen,220676,2-0,0
+Darwin Ma,90523,Ben Johns,229952,2-1,1
+Eugene Liu,229949,Jason Lee,229945,2-0,0
+Jerry Yang,220794,Ryan Kushner,220674,2-1,8
+Daniel Schultz,229947,Harvey Sun,229951,2-0,1
+Ryan Kushner,220674,Thomas Brosh,229948,2-1,4
+Nathan Hsu,33874,Brian Shen,220676,2-1,0
+Madhava Paliyam,229954,Moses Kang,229950,2-0,0
+Harvey Sun,229951,Moses Kang,229950,2-1,6
+Andrew Zhang,85006,Ryan Kushner,220674,2-1,1
+Michael Oliver,229914,Trueman Phamdo,229946,2-0,4
+Ben Johns,229952,Brian Shen,220676,2-0,0
+Trueman Phamdo,229946,Jason Lee,229945,2-0,1
+Madhava Paliyam,229954,James Poff,229953,2-0,0
+Michael Oliver,229914,Jason Lee,229945,2-0,0
+Ryan Kushner,220674,Arush Shah,229944,2-1,2
+Nathan Hsu,33874,Ben Johns,229952,2-0,0
+Daniel Schultz,229947,Moses Kang,229950,2-1,0
+Eugene Liu,229949,Trueman Phamdo,229946,2-1,0
+Thomas Brosh,229948,Arush Shah,229944,2-1,5
+Jerry Yang,220794,Thomas Brosh,229948,2-0,5
+Nathan Hsu,33874,Darwin Ma,90523,2-0,0
+Andrew Zhang,85006,Arush Shah,229944,2-0,0
