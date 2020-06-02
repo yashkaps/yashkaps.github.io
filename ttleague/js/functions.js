@@ -251,7 +251,7 @@ window.onload = function () {
 
     console.log("from return_table_matches");
     console.log("id:" + id);
-    fetch("https://yashkaps.github.io/ttleague/data/csv_files/" + id + ".csv")
+    fetch("https://raw.githubusercontent.com/yashkaps/yashkaps.github.io/master/ttleague/data/csv_files/" + id + ".csv")
       .then(function (response) {
         return response.text();
       })
@@ -276,6 +276,8 @@ window.onload = function () {
 
     return false;
   }
+
+  //=================================================================================
 
   // adds event listeners
   function addingEventListeners() {
