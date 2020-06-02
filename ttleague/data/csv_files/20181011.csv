@@ -1,0 +1,50 @@
+Name,Begin Rating,End Rating,+/-
+Darwin Ma,1909,1834,-75
+Ben Johns,1694,1734,40
+Brian Shen,921,985,64
+Jerry Yang,901,896,-5
+Adrian Paras,395,394,-1
+Michael Li,1769,1804,35
+James Poff,621,618,-3
+Andrew Zhang,1079,1064,-15
+Thomas Brosh,806,800,-6
+Ryan Kushner,875,858,-17
+Chris Zhang,0,1047,1047
+Hao Yan,846,1022,176
+Palak Suri,0,1042,1042
+Richard Teng,440,810,370
+Kevin Tsai,0,1058,1058
+Yi-Mu Chen,1000,1011,11
+Aal Ali,1319,1319,0
+,,,
+,,,
+,,,
+Winner Name,Loser Name,Score,+/-
+Thomas Brosh,Adrian Paras,,0
+Chris Zhang,Ryan Kushner,,1
+Michael Li,Darwin Ma,,30
+Brian Shen,Ryan Kushner,,6
+Darwin Ma,Aal Ali,,0
+Brian Shen,Jerry Yang,,7
+Richard Teng,James Poff,,2
+Michael Li,Aal Ali,,0
+Brian Shen,Yi-Mu Chen,,16
+Hao Yan,Kevin Tsai,,40
+Ben Johns,Aal Ali,,0
+Kevin Tsai,Palak Suri,,8
+Thomas Brosh,James Poff,,2
+Hao Yan,Palak Suri,,40
+James Poff,Adrian Paras,,1
+Brian Shen,Chris Zhang,,35
+Andrew Zhang,Palak Suri,,10
+Andrew Zhang,Kevin Tsai,,10
+Richard Teng,Thomas Brosh,,8
+Yi-Mu Chen,Chris Zhang,,20
+Chris Zhang,Jerry Yang,,1
+Yi-Mu Chen,Ryan Kushner,,3
+Richard Teng,Adrian Paras,,0
+Ben Johns,Darwin Ma,,45
+Yi-Mu Chen,Jerry Yang,,4
+Michael Li,Ben Johns,,5
+Hao Yan,Andrew Zhang,,35
+Jerry Yang,Ryan Kushner,,7

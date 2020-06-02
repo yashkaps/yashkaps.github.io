@@ -1,0 +1,30 @@
+Name,Begin Rating,End Rating,+/-
+Jerry Yang,778,743,-35
+Yash Kapoor,803,796,-7
+Rohit Thakur,571,564,-7
+Thomas Brosh,844,848,4
+Qiyao Zhou,1803,1798,-5
+eli lichtblau,353,659,306
+Telon Jiang Yan,1002,1005,3
+chris yan,822,829,7
+Michael Li,1875,1880,5
+,,,
+,,,
+,,,
+Winner Name,Loser Name,Score,+/-
+chris yan,Rohit Thakur,1-Feb,0
+Jerry Yang,Rohit Thakur,1-Feb,1
+Qiyao Zhou,Thomas Brosh,Feb-00,0
+chris yan,Jerry Yang,Feb-00,6
+Qiyao Zhou,Telon Jiang Yan,Feb-00,0
+eli lichtblau,Jerry Yang,Feb-00,30
+chris yan,eli lichtblau,Feb-00,1
+Telon Jiang Yan,Thomas Brosh,Feb-00,2
+eli lichtblau,Rohit Thakur,Feb-00,6
+Michael Li,Yash Kapoor,Feb-00,0
+Qiyao Zhou,Yash Kapoor,Feb-00,0
+Telon Jiang Yan,Yash Kapoor,1-Feb,1
+Thomas Brosh,Yash Kapoor,Feb-00,6
+Michael Li,Qiyao Zhou,1-Feb,5
+Michael Li,Telon Jiang Yan,Feb-00,0
+Michael Li,Thomas Brosh,Feb-00,0

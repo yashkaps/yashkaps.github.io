@@ -1,0 +1,29 @@
+Name,Begin Rating,End Rating,+/-
+Fangli Liu,1026,1061,35
+Brian Shen,1004,989,-15
+Andrew Zhang,1010,1030,20
+Chris Zhang,1040,1018,-22
+Juan Abascal,715,764,49
+Yi-Mu Chen,986,996,10
+James Poff,613,609,-4
+Haoying Dai,933,888,-45
+Ke Lan,1204,1171,-33
+Johnny Abudayeh,0,982,982
+Guangyi Wang,951,974,23
+,,,
+,,,
+,,,
+Winner Name,Loser Name,Score,+/-
+Andrew Zhang,Fangli Liu,,10
+Fangli Liu,Ke Lan,,35
+Ke Lan,Chris Zhang,,2
+Brian Shen,Johnny Abudayeh,,8
+Andrew Zhang,Chris Zhang,,10
+Juan Abascal,Haoying Dai,,45
+Guangyi Wang,Brian Shen,,13
+Yi-Mu Chen,Johnny Abudayeh,,10
+Fangli Liu,Chris Zhang,,10
+Yi-Mu Chen,Brian Shen,,10
+Guangyi Wang,Yi-Mu Chen,,10
+Juan Abascal,James Poff,,4
+Haoying Dai,James Poff,,0
