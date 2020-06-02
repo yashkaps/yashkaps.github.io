@@ -219,7 +219,7 @@ window.onload = function () {
       "12": "December",
     }
 
-    fetch("https://yashkaps.github.io/ttleague/data/file_names.txt")
+    fetch("https://yashkaps.github.io/ttleague/data/csv_files/file_names.txt")
       .then(function (response) {
         return response.text();
       })
