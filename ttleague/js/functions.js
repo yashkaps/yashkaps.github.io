@@ -227,7 +227,7 @@ window.onload = function () {
         var result = `<li>`;
         var lines = data.split("\n");
 
-        for (var i = 0; i < lines.length; i++) {
+        for (var i = 0; i < lines.length - 1; i++) {
           var date = months[lines[i].substring(4, 6)] + " " + lines[i].substring(6, 8) + ", " + lines[i].substring(0, 4);
           result += `<ul><a href="#" id="` + lines[i] + `">` + date + `</a></ul>`;
 
@@ -235,7 +235,8 @@ window.onload = function () {
         result += `</li>`;
         document.getElementById("content").innerHTML += result;
 
-        for (var i = 0; i < lines.length; i++) {
+        for (var i = 0; i < lines.length - 1; i++) {
+          console.log(lines[i]);
           document.getElementById(lines[i]).addEventListener("click", () => return_table_matches(lines[i]));
         }
       });
@@ -247,21 +248,17 @@ window.onload = function () {
     document.getElementById("content").innerHTML =
       "<br><br><h2>League Event Match Results</h2><br><br>";
 
-    fetch("https://yashkaps.github.io/ttleague/data/" + id + ".csv")
+    fetch("https://yashkaps.github.io/ttleague/data/csv_files/" + id + ".csv")
       .then(function (response) {
         return response.text();
       })
       .then(function (data) {
-        var big_separation = data.split("\n\n\n");
-        var rating_changes = big_separation[0];
-        var match_results = big_separation[1];
+        var result = `<table id="matches">`;
+        result += "<tr> <th>Winner</th> <th>Loser</th> <th>Score</th> </tr>";
+        var length = data.length;
+        var lines = data.split("\n");
 
-        var result = `<table id="match_results">`;
-        var lines = match_results.split("\n");
-        var heading = lines[0].split(",");
-        result += "<tr> <th>" + heading[0] + "</th><th>" + heading[1] + "</th><th>" + heading[2] + "</th><th>" + heading[3] + "</th> </tr>";
-
-        for (var i = 1; i < lines.length - 1; i++) {
+        for (var i = 0; i < lines.length - 1; i++) {
           result += "<tr>";
           var words = lines[i].split(",");
           for (var j = 0; j < words.length; j++) {
@@ -269,24 +266,7 @@ window.onload = function () {
           }
           result += "</tr>";
         }
-        result += "</table>";
 
-
-
-        result += `<table id="rating_changes">`;
-        lines = rating_changes.split("\n");
-        heading = lines[0].split(",");
-        result += "<tr> <th>" + heading[0] + "</th><th>" + heading[1] + "</th><th>" + heading[2] + "</th><th>" + heading[3] + "</th> </tr>";
-
-        for (var i = 1; i < lines.length - 1; i++) {
-          result += "<tr>";
-          var words = lines[i].split(",");
-          for (var j = 0; j < words.length; j++) {
-            result += "<td>" + words[j] + "</td>";
-          }
-          result += "</tr>";
-        }
-        result += "</table>";
         document.getElementById("content").innerHTML += result;
       });
 
