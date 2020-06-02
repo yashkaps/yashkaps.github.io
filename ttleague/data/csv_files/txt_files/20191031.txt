@@ -12,9 +12,6 @@ Chenzhi Zhao,1191,1199,8
 eli lichtblau,334,323,-11
 Yicheng _,345,347,2
 Sowndar Gopi,388,355,-33
-
-
-
 Winner Name,Loser Name,Score,+/-
 eli lichtblau,Sowndar Gopi,2-0,13
 xu zhang,Guangyi Wang,2-1,1

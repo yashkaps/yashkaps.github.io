@@ -26,9 +26,6 @@ Rui Xu,0,2197,2197
 Nathan Hsu,2329,2332,3
 Juan Abascal,0,756,756
 Ethan Mountfort,0,541,541
-
-
-
 Winner Name,Loser Name,Score,+/-
 Yi-Mu Chen,Ryan Kushner,2-0,5
 Shreyas Pandey,Daniel Schultz,2-0,4

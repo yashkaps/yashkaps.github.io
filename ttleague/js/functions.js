@@ -258,16 +258,18 @@ window.onload = function () {
         return response.text();
       })
       .then(function (data) {
-        var big_separation = data.split("\n\n\n");
+        var big_separation = data.split("Winner Name,Loser Name,Score,+/-");
         var rating_changes = big_separation[0];
         var match_results = big_separation[1];
+
+        console.log(big_separation);
 
         var result = `<table id="match_results">`;
         var lines = match_results.split("\n");
         var heading = lines[0].split(",");
-        result += "<tr> <th>" + heading[0] + "</th><th>" + heading[1] + "</th><th>" + heading[2] + "</th><th>" + heading[3] + "</th> </tr>";
+        result += "<tr> <th>Winner Name</th><th>Loser Name</th><th>Score</th><th>+/-</th> </tr>";
 
-        for (var i = 1; i < lines.length - 1; i++) {
+        for (var i = 0; i < lines.length - 1; i++) {
           result += "<tr>";
           var words = lines[i].split(",");
           for (var j = 0; j < words.length; j++) {
@@ -276,7 +278,9 @@ window.onload = function () {
           result += "</tr>";
         }
 
-        result += "</table>";
+        result += "</table><br><br><br><br>";
+
+        result += "<h2>Rating Changes</h1><br><br>";
 
         result += `<table id="rating_changes">`;
         lines = rating_changes.split("\n");

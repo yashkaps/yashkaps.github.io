@@ -8,9 +8,6 @@ Ke Lan,1140,1125,-15
 Sarveshwaran Jayaraman,1842,1834,-8
 Crystal Lin,500,494,-6
 Brian Shen,1034,1064,30
-
-
-
 Winner Name,Loser Name,Score,+/-
 Ke Lan,Zhenning Li,2-1,5
 Sarveshwaran Jayaraman,Brian Shen,2-0,0

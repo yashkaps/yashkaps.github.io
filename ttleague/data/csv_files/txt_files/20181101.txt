@@ -10,9 +10,6 @@ Haoying Dai,933,888,-45
 Ke Lan,1204,1171,-33
 Johnny Abudayeh,0,982,982
 Guangyi Wang,951,974,23
-
-
-
 Winner Name,Loser Name,Score,+/-
 Andrew Zhang,Fangli Liu,,10
 Fangli Liu,Ke Lan,,35

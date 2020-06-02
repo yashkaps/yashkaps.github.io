@@ -20,9 +20,6 @@ Andrew Zhang,1103,1079,-24
 Koushik Manipally,0,722,722
 yi wang,0,796,796
 alan Tsidilkovski,0,601,601
-
-
-
 Winner Name,Loser Name,Score,+/-
 Mrinalgouda Patil,Adrian Paras,,1
 Michael Li,Yi-Mu Chen,,0

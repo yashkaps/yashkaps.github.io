@@ -6,9 +6,6 @@ Michael Li,1831,1831,0
 Adnaan Dasoo,0,700,700
 Nishanth Mallekav,0,800,800
 Brian Shen,989,1005,16
-
-
-
 Winner Name,Loser Name,Score,+/-
 Michael Li,Brian Shen,2-0,0
 Michael Li,Nishanth Mallekav,2-0,0
