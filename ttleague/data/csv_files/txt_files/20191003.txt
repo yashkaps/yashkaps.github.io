@@ -1,0 +1,54 @@
+Name,Begin Rating,End Rating,+/-
+eli lichtblau,200,248,48
+Sowndar Gopi,350,377,27
+Yi-Mu Chen,980,979,-1
+ben moskowitz,0,200,200
+xu zhang,813,831,18
+chris yan,829,822,-7
+Noah Hagan,0,184,184
+Adhish Dighe,0,1517,1517
+Thomas Brosh,709,713,4
+Qiyao Zhou,1837,1829,-8
+Rithvik Yarlagadda,732,732,0
+Sally Zhao,566,516,-50
+Matteo Mantovani,0,216,216
+Yash Kapoor,709,694,-15
+Chenzhi Zhao,1197,1198,1
+eric gulich,0,224,224
+Joshua Deguzman,0,176,176
+Crystal Lin,477,452,-25
+Michael Li,1841,1849,8
+,,,
+,,,
+,,,
+Winner Name,Loser Name,Score,+/-
+xu zhang,Yash Kapoor,2-0,4
+Qiyao Zhou,Yi-Mu Chen,2-0,0
+Adhish Dighe,Yi-Mu Chen,2-1,0
+eric gulich,Noah Hagan,2-0,8
+eric gulich,Matteo Mantovani,2-0,8
+eric gulich,Joshua Deguzman,2-0,8
+Qiyao Zhou,Chenzhi Zhao,2-0,0
+Sowndar Gopi,Crystal Lin,2-1,25
+Thomas Brosh,Yash Kapoor,2-1,8
+chris yan,Yash Kapoor,2-0,3
+xu zhang,chris yan,2-0,10
+Rithvik Yarlagadda,Sowndar Gopi,2-0,0
+Crystal Lin,eli lichtblau,2-1,0
+Chenzhi Zhao,Yi-Mu Chen,2-0,1
+Sowndar Gopi,eli lichtblau,2-1,2
+Rithvik Yarlagadda,eli lichtblau,2-0,0
+Adhish Dighe,Chenzhi Zhao,2-1,0
+Matteo Mantovani,Joshua Deguzman,,8
+Michael Li,Adhish Dighe,2-0,0
+ben moskowitz,Noah Hagan,2-0,8
+xu zhang,Thomas Brosh,2-0,4
+Michael Li,Qiyao Zhou,2-1,8
+Rithvik Yarlagadda,Crystal Lin,2-1,0
+Qiyao Zhou,Adhish Dighe,2-0,0
+Michael Li,Yi-Mu Chen,2-0,0
+eli lichtblau,Sally Zhao,2-0,50
+Matteo Mantovani,ben moskowitz,2-1,8
+Noah Hagan,Joshua Deguzman,2-1,8
+Matteo Mantovani,Noah Hagan,2-0,8
+Michael Li,Chenzhi Zhao,2-0,0

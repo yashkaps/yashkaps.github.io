@@ -1,0 +1,60 @@
+Name,Begin Rating,End Rating,+/-
+sagar saxena,0,253,253
+eric gulich,224,249,25
+Yash Kapoor,694,718,24
+chris yan,822,822,0
+David Fang,300,259,-41
+Crystal Lin,452,460,8
+Qiyao Zhou,1829,1822,-7
+Titus Kan,791,742,-49
+Thomas Brosh,713,712,-1
+Sowndar Gopi,377,389,12
+Jason Skill,438,398,-40
+Matteo Mantovani,216,260,44
+Rohit Thakur,426,426,0
+jacob Shakesprere,0,168,168
+Arjun Cherupacca,0,394,394
+Chenzhi Zhao,1198,1198,0
+Michael Li,1849,1856,7
+Rithvik Yarlagadda,732,758,26
+jared loadholt,232,455,223
+,,,
+,,,
+,,,
+Winner Name,Loser Name,Score,+/-
+Matteo Mantovani,David Fang,2-1,16
+Sowndar Gopi,Jason Skill,2-1,13
+Matteo Mantovani,eric gulich,2-1,8
+Rithvik Yarlagadda,Titus Kan,2-0,13
+sagar saxena,jacob Shakesprere,2-0,5
+Yash Kapoor,Titus Kan,2-1,20
+Matteo Mantovani,jacob Shakesprere,2-0,7
+eric gulich,David Fang,2-1,16
+jared loadholt,Arjun Cherupacca,2-0,7
+Titus Kan,Rohit Thakur,2-1,0
+Matteo Mantovani,sagar saxena,2-1,13
+eric gulich,jacob Shakesprere,2-0,7
+Rithvik Yarlagadda,Thomas Brosh,2-1,7
+jared loadholt,Crystal Lin,2-1,10
+Crystal Lin,Jason Skill,2-0,7
+jared loadholt,Sowndar Gopi,2-0,6
+Chenzhi Zhao,chris yan,2-0,0
+Michael Li,Chenzhi Zhao,2-0,0
+Thomas Brosh,Titus Kan,2-1,16
+Crystal Lin,Arjun Cherupacca,2-1,6
+Sowndar Gopi,Arjun Cherupacca,2-0,10
+Yash Kapoor,Thomas Brosh,2-0,10
+Rithvik Yarlagadda,Yash Kapoor,2-0,6
+Michael Li,Qiyao Zhou,2-0,7
+sagar saxena,David Fang,2-0,13
+Arjun Cherupacca,Jason Skill,2-0,10
+Qiyao Zhou,Chenzhi Zhao,2-0,0
+Rithvik Yarlagadda,Rohit Thakur,2-0,0
+eric gulich,sagar saxena,2-0,10
+jared loadholt,Jason Skill,2-0,10
+Yash Kapoor,Rohit Thakur,2-0,0
+Thomas Brosh,Rohit Thakur,2-1,0
+Qiyao Zhou,chris yan,2-0,0
+David Fang,jacob Shakesprere,2-0,4
+Crystal Lin,Sowndar Gopi,2-1,5
+Michael Li,chris yan,2-0,0

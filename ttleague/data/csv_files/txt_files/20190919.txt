@@ -1,0 +1,74 @@
+Name,Begin Rating,End Rating,+/-
+Rithvik Yarlagadda,691,732,41
+Nick Magnelli,730,733,3
+Yun Xia,0,283,283
+shivam agrawal,0,886,886
+Yi-Mu Chen,1006,980,-26
+Chenzhi Zhao,1196,1197,1
+Michael Li,1831,1841,10
+eli lichtblau,0,200,200
+Jerry Yang,810,778,-32
+Rohith Jayarajan,1256,1206,-50
+Telon Jiang Yan,0,1080,1080
+Jiawei Yuan,370,480,110
+xu zhang,0,813,813
+jared loadholt,0,232,232
+Qiyao Zhou,1847,1837,-10
+dylan lee,0,176,176
+Titus Kan,766,791,25
+chris yan,0,829,829
+jingyuan he,0,659,659
+Crystal Lin,517,477,-40
+Sowndar Gopi,300,350,50
+sahil sinha,0,184,184
+Jason Wang,0,208,208
+,,,
+,,,
+,,,
+Winner Name,Loser Name,Score,+/-
+Michael Li,Qiyao Zhou,2-0,10
+chris yan,Nick Magnelli,2-0,6
+Crystal Lin,Jiawei Yuan,2-1,4
+Nick Magnelli,jingyuan he,2-0,6
+Rohith Jayarajan,Sowndar Gopi,2-0,0
+Jiawei Yuan,Sowndar Gopi,2-1,3
+Jason Wang,dylan lee,2-0,8
+Jason Wang,sahil sinha,2-0,8
+chris yan,Rithvik Yarlagadda,2-0,5
+xu zhang,Sowndar Gopi,2-0,0
+Telon Jiang Yan,Rithvik Yarlagadda,2-1,0
+Chenzhi Zhao,Titus Kan,2-0,0
+Jerry Yang,jingyuan he,2-0,3
+Rohith Jayarajan,Jiawei Yuan,2-0,0
+Jerry Yang,chris yan,2-1,6
+Sowndar Gopi,Yun Xia,2-1,8
+Rithvik Yarlagadda,Nick Magnelli,2-0,13
+Michael Li,Chenzhi Zhao,2-0,0
+jared loadholt,eli lichtblau,2-1,8
+chris yan,Telon Jiang Yan,2-0,50
+shivam agrawal,Yi-Mu Chen,2-1,25
+Telon Jiang Yan,Nick Magnelli,2-0,0
+Jiawei Yuan,Yun Xia,2-1,3
+Qiyao Zhou,Titus Kan,2-0,0
+Rohith Jayarajan,Yun Xia,2-1,0
+xu zhang,Yun Xia,2-1,0
+Michael Li,Titus Kan,2-0,0
+eli lichtblau,dylan lee,2-0,8
+Titus Kan,shivam agrawal,2-0,25
+xu zhang,Rohith Jayarajan,2-0,50
+Rithvik Yarlagadda,jingyuan he,2-0,8
+Telon Jiang Yan,jingyuan he,2-0,0
+xu zhang,Crystal Lin,2-0,0
+Nick Magnelli,Jerry Yang,2-1,16
+Telon Jiang Yan,Jerry Yang,2-0,0
+Qiyao Zhou,Chenzhi Zhao,2-0,0
+jared loadholt,dylan lee,2-1,8
+Sowndar Gopi,Crystal Lin,2-0,45
+jared loadholt,sahil sinha,2-0,8
+Jiawei Yuan,xu zhang,2-1,50
+Rohith Jayarajan,Crystal Lin,2-1,0
+Chenzhi Zhao,Yi-Mu Chen,2-0,1
+jared loadholt,Jason Wang,2-0,8
+Crystal Lin,Yun Xia,2-1,1
+chris yan,jingyuan he,2-1,4
+Rithvik Yarlagadda,Jerry Yang,2-0,25

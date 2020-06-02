@@ -1,0 +1,40 @@
+Name,Begin Rating,End Rating,+/-
+Darwin Ma,1828,1824,-4
+Ben Johns,1725,1717,-8
+Fangli Liu,986,1026,40
+Ryan Kushner,858,851,-7
+James Poff,618,613,-5
+Harvey Sun,540,529,-11
+Andrew Zhang,1064,1010,-54
+Haoying Dai,910,933,23
+Chris Zhang,1056,1040,-16
+Jerry Yang,890,897,7
+Brian Shen,997,1004,7
+Michael Li,1819,1831,12
+Eugene Liu,601,617,16
+,,,
+,,,
+,,,
+Winner Name,Loser Name,Score,+/-
+Jerry Yang,Ryan Kushner,2-1,7
+Fangli Liu,Andrew Zhang,2-0,16
+Jerry Yang,James Poff,2-0,0
+Andrew Zhang,Chris Zhang,2-0,8
+Jerry Yang,Eugene Liu,2-0,0
+Eugene Liu,Harvey Sun,2-0,6
+Eugene Liu,James Poff,2-1,10
+Ryan Kushner,Eugene Liu,2-0,0
+Ryan Kushner,James Poff,2-0,0
+Ryan Kushner,Harvey Sun,2-0,0
+Fangli Liu,Brian Shen,2-0,8
+Fangli Liu,Chris Zhang,2-0,16
+Chris Zhang,Haoying Dai,2-0,2
+Haoying Dai,Andrew Zhang,2-0,30
+Chris Zhang,Brian Shen,2-0,6
+Brian Shen,Andrew Zhang,2-0,16
+James Poff,Harvey Sun,2-0,5
+Michael Li,Ben Johns,2-0,4
+Michael Li,Darwin Ma,2-0,8
+Jerry Yang,Harvey Sun,2-0,0
+Darwin Ma,Ben Johns,2-1,4
+Brian Shen,Haoying Dai,2-0,5

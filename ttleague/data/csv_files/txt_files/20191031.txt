@@ -1,0 +1,38 @@
+Name,Begin Rating,End Rating,+/-
+Telon Jiang Yan,1080,1011,-69
+Poojan Shah,614,615,1
+Thomas Brosh,844,844,0
+Rithvik Yarlagadda,739,784,45
+Yash Kapoor,705,804,99
+Matteo Mantovani,260,301,41
+Guangyi Wang,974,973,-1
+xu zhang,1169,1113,-56
+Chris Zhang,968,992,24
+Chenzhi Zhao,1191,1199,8
+eli lichtblau,334,323,-11
+Yicheng _,345,347,2
+Sowndar Gopi,388,355,-33
+,,,
+,,,
+,,,
+Winner Name,Loser Name,Score,+/-
+eli lichtblau,Sowndar Gopi,2-0,13
+xu zhang,Guangyi Wang,2-1,1
+Chris Zhang,Thomas Brosh,2-1,3
+Poojan Shah,Sowndar Gopi,2-0,1
+Rithvik Yarlagadda,Telon Jiang Yan,2-0,50
+Chris Zhang,Rithvik Yarlagadda,2-0,1
+Matteo Mantovani,eli lichtblau,2-0,16
+Thomas Brosh,Rithvik Yarlagadda,2-1,4
+Yicheng _,eli lichtblau,2-0,8
+Sowndar Gopi,Yicheng _,2-0,6
+Chenzhi Zhao,Yash Kapoor,2-0,0
+Chenzhi Zhao,Guangyi Wang,2-0,1
+Telon Jiang Yan,Thomas Brosh,2-0,1
+Chris Zhang,Telon Jiang Yan,2-0,20
+Guangyi Wang,Yash Kapoor,2-1,1
+Poojan Shah,eli lichtblau,2-0,0
+Matteo Mantovani,Sowndar Gopi,2-1,25
+Poojan Shah,Matteo Mantovani,2-1,0
+Chenzhi Zhao,xu zhang,2-0,7
+Yash Kapoor,xu zhang,2-0,50

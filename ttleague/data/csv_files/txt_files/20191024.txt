@@ -1,0 +1,58 @@
+Name,Begin Rating,End Rating,+/-
+Michael Li,1863,1869,6
+ben moskowitz,288,318,30
+Yicheng _,0,345,345
+Dylan Breitenbach,0,413,413
+Thomas Brosh,744,844,100
+Poojan Shah,0,614,614
+Adhish Dighe,1517,1517,0
+John Marcellino,0,650,650
+Rohit Thakur,525,558,33
+Jason Skill,398,357,-41
+Sally Zhao,516,617,101
+Yash Kapoor,733,705,-28
+Aryeh Roberts,0,337,337
+Alex Cook,500,504,4
+Qiyao Zhou,1815,1809,-6
+eli lichtblau,248,334,86
+Sam Finkel,0,421,421
+xu zhang,1219,1169,-50
+Chris Zhang,1018,968,-50
+,,,
+,,,
+,,,
+Winner Name,Loser Name,Score,+/-
+Poojan Shah,John Marcellino,2-0,50
+ben moskowitz,Jason Skill,2-0,20
+Poojan Shah,eli lichtblau,2-1,0
+Adhish Dighe,Thomas Brosh,2-0,0
+ben moskowitz,Aryeh Roberts,2-1,13
+Qiyao Zhou,Adhish Dighe,2-1,0
+Sam Finkel,Aryeh Roberts,2-0,6
+Yash Kapoor,Alex Cook,2-1,1
+Sally Zhao,Rohit Thakur,2-1,6
+Chris Zhang,Alex Cook,2-0,0
+Michael Li,Qiyao Zhou,2-0,6
+eli lichtblau,Dylan Breitenbach,2-0,25
+Dylan Breitenbach,Poojan Shah,2-1,35
+Thomas Brosh,xu zhang,2-0,50
+Qiyao Zhou,xu zhang,2-0,0
+eli lichtblau,Yicheng _,2-0,10
+Qiyao Zhou,Thomas Brosh,2-0,0
+John Marcellino,Yicheng _,2-0,0
+Michael Li,Thomas Brosh,2-0,0
+Sam Finkel,Jason Skill,2-0,8
+Adhish Dighe,xu zhang,2-0,0
+Sally Zhao,Yash Kapoor,2-0,30
+Sally Zhao,Alex Cook,2-1,5
+Alex Cook,Rohit Thakur,2-0,10
+Aryeh Roberts,Jason Skill,2-0,13
+Michael Li,xu zhang,2-0,0
+Chris Zhang,Sally Zhao,2-1,0
+Chris Zhang,Yash Kapoor,2-0,0
+John Marcellino,Dylan Breitenbach,2-0,0
+Michael Li,Adhish Dighe,2-0,0
+Sam Finkel,ben moskowitz,2-1,3
+Rohit Thakur,Chris Zhang,2-0,50
+Yicheng _,Dylan Breitenbach,2-0,20
+Yash Kapoor,Rohit Thakur,2-1,1

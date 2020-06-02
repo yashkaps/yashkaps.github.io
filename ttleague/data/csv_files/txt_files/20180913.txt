@@ -1,0 +1,55 @@
+Name,Begin Rating,End Rating,+/-
+Eugene Liu,0,1001,1001
+Daniel Schultz,0,705,705
+Jerry Yang,892,906,14
+Trueman Phamdo,0,697,697
+Thomas Brosh,0,806,806
+Michael Oliver,0,803,803
+Arush Shah,0,736,736
+Darwin Ma,1908,1909,1
+James Poff,0,602,602
+Ben Johns,0,1699,1699
+Harvey Sun,0,501,501
+Andrew Zhang,0,1102,1102
+Ryan Kushner,902,899,-3
+Nathan Hsu,2329,2329,0
+Jason Lee,0,499,499
+Madhava Paliyam,0,1023,1023
+Brian Shen,887,887,0
+Moses Kang,0,442,442
+,,,
+,,,
+,,,
+Winner Name,Loser Name,Score,+/-
+Daniel Schultz,James Poff,2-0,4
+Andrew Zhang,Thomas Brosh,2-0,0
+Madhava Paliyam,Harvey Sun,2-0,0
+James Poff,Harvey Sun,2-0,4
+Eugene Liu,Michael Oliver,2-0,1
+Jerry Yang,Arush Shah,2-1,2
+James Poff,Moses Kang,2-0,2
+Madhava Paliyam,Daniel Schultz,2-0,0
+Andrew Zhang,Jerry Yang,2-1,1
+Darwin Ma,Brian Shen,2-0,0
+Darwin Ma,Ben Johns,2-1,1
+Eugene Liu,Jason Lee,2-0,0
+Jerry Yang,Ryan Kushner,2-1,8
+Daniel Schultz,Harvey Sun,2-0,1
+Ryan Kushner,Thomas Brosh,2-1,4
+Nathan Hsu,Brian Shen,2-1,0
+Madhava Paliyam,Moses Kang,2-0,0
+Harvey Sun,Moses Kang,2-1,6
+Andrew Zhang,Ryan Kushner,2-1,1
+Michael Oliver,Trueman Phamdo,2-0,4
+Ben Johns,Brian Shen,2-0,0
+Trueman Phamdo,Jason Lee,2-0,1
+Madhava Paliyam,James Poff,2-0,0
+Michael Oliver,Jason Lee,2-0,0
+Ryan Kushner,Arush Shah,2-1,2
+Nathan Hsu,Ben Johns,2-0,0
+Daniel Schultz,Moses Kang,2-1,0
+Eugene Liu,Trueman Phamdo,2-1,0
+Thomas Brosh,Arush Shah,2-1,5
+Jerry Yang,Thomas Brosh,2-0,5
+Nathan Hsu,Darwin Ma,2-0,0
+Andrew Zhang,Arush Shah,2-0,0

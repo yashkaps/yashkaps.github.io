@@ -1,0 +1,26 @@
+Name,Begin Rating,End Rating,+/-
+Peter Frantz,0,602,602
+Richard Teng,0,440,440
+Brian Shen,886,893,7
+Rohith Jayarajan,0,1256,1256
+Chenzhi Zhao,0,1194,1194
+Jerry Yang,868,861,-7
+,,,
+,,,
+,,,
+Winner Name,Loser Name,Score,+/-
+Rohith Jayarajan,Jerry Yang,2-0,0
+Peter Frantz,Richard Teng,2-0,2
+Brian Shen,Jerry Yang,2-0,7
+Chenzhi Zhao,Peter Frantz,2-0,0
+Brian Shen,Richard Teng,2-0,0
+Jerry Yang,Peter Frantz,2-0,0
+Chenzhi Zhao,Richard Teng,2-0,0
+Rohith Jayarajan,Brian Shen,2-0,0
+Chenzhi Zhao,Jerry Yang,2-0,0
+Chenzhi Zhao,Brian Shen,2-0,0
+Rohith Jayarajan,Richard Teng,2-0,0
+Rohith Jayarajan,Peter Frantz,2-0,0
+Brian Shen,Peter Frantz,2-0,0
+Jerry Yang,Richard Teng,2-0,0
+Rohith Jayarajan,Chenzhi Zhao,2-1,6

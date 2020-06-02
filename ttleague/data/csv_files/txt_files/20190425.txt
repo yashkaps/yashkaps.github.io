@@ -1,0 +1,29 @@
+Name,Begin Rating,End Rating,+/-
+Zhenning Li,1065,1050,-15
+Yash Kapoor,602,705,103
+Ryan Kushner,840,760,-80
+Michael Li,1831,1839,8
+Rithvik Yarlagadda,554,647,93
+Ke Lan,1140,1125,-15
+Sarveshwaran Jayaraman,1842,1834,-8
+Crystal Lin,500,494,-6
+Brian Shen,1034,1064,30
+,,,
+,,,
+,,,
+Winner Name,Loser Name,Score,+/-
+Ke Lan,Zhenning Li,2-1,5
+Sarveshwaran Jayaraman,Brian Shen,2-0,0
+Michael Li,Brian Shen,2-0,0
+Michael Li,Sarveshwaran Jayaraman,2-0,8
+Michael Li,Ke Lan,2-0,0
+Brian Shen,Zhenning Li,2-1,10
+Yash Kapoor,Crystal Lin,2-0,2
+Yash Kapoor,Ryan Kushner,2-1,35
+Michael Li,Zhenning Li,2-1,0
+Sarveshwaran Jayaraman,Ke Lan,2-1,0
+Yash Kapoor,Rithvik Yarlagadda,2-1,6
+Rithvik Yarlagadda,Ryan Kushner,0-2,45
+Ryan Kushner,Crystal Lin,2-1,0
+Rithvik Yarlagadda,Crystal Lin,2-1,4
+Brian Shen,Ke Lan,2-0,20
