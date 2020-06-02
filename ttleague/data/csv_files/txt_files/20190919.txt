@@ -22,9 +22,9 @@ Crystal Lin,517,477,-40
 Sowndar Gopi,300,350,50
 sahil sinha,0,184,184
 Jason Wang,0,208,208
-,,,
-,,,
-,,,
+
+
+
 Winner Name,Loser Name,Score,+/-
 Michael Li,Qiyao Zhou,2-0,10
 chris yan,Nick Magnelli,2-0,6

@@ -12,9 +12,9 @@ Jerry Yang,890,897,7
 Brian Shen,997,1004,7
 Michael Li,1819,1831,12
 Eugene Liu,601,617,16
-,,,
-,,,
-,,,
+
+
+
 Winner Name,Loser Name,Score,+/-
 Jerry Yang,Ryan Kushner,2-1,7
 Fangli Liu,Andrew Zhang,2-0,16

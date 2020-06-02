@@ -18,9 +18,9 @@ eric gulich,0,224,224
 Joshua Deguzman,0,176,176
 Crystal Lin,477,452,-25
 Michael Li,1841,1849,8
-,,,
-,,,
-,,,
+
+
+
 Winner Name,Loser Name,Score,+/-
 xu zhang,Yash Kapoor,2-0,4
 Qiyao Zhou,Yi-Mu Chen,2-0,0

@@ -17,9 +17,9 @@ Jason Lee,0,499,499
 Madhava Paliyam,0,1023,1023
 Brian Shen,887,887,0
 Moses Kang,0,442,442
-,,,
-,,,
-,,,
+
+
+
 Winner Name,Loser Name,Score,+/-
 Daniel Schultz,James Poff,2-0,4
 Andrew Zhang,Thomas Brosh,2-0,0

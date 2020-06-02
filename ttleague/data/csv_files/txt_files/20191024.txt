@@ -18,9 +18,9 @@ eli lichtblau,248,334,86
 Sam Finkel,0,421,421
 xu zhang,1219,1169,-50
 Chris Zhang,1018,968,-50
-,,,
-,,,
-,,,
+
+
+
 Winner Name,Loser Name,Score,+/-
 Poojan Shah,John Marcellino,2-0,50
 ben moskowitz,Jason Skill,2-0,20

@@ -8,9 +8,9 @@ eli lichtblau,353,659,306
 Telon Jiang Yan,1002,1005,3
 chris yan,822,829,7
 Michael Li,1875,1880,5
-,,,
-,,,
-,,,
+
+
+
 Winner Name,Loser Name,Score,+/-
 chris yan,Rohit Thakur,2-1,0
 Jerry Yang,Rohit Thakur,2-1,1
