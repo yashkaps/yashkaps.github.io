@@ -198,13 +198,56 @@ window.onload = function () {
   }
 
   //===========================================================================================
+
+  // function to return a table of all matches
+  function display_matches() {
+    document.getElementById("content").innerHTML =
+      "<br><br><h2>All League Events</h2><br><br>";
+
+    var months = {
+      "01": "January",
+      "02": "February",
+      "03": "March",
+      "04": "April",
+      "05": "May",
+      "06": "June",
+      "07": "July",
+      "08": "August",
+      "09": "September",
+      "10": "October",
+      "11": "November",
+      "12": "December",
+    }
+
+    fetch("https://yashkaps.github.io/ttleague/data/file_names.txt")
+      .then(function (response) {
+        return response.text();
+      })
+      .then(function (data) {
+        var result = `<li>`;
+        var lines = data.split("\n");
+
+        for (var i = 0; i < lines.length; i++) {
+          var date = months[lines[i].substring(4, 6)] + " " + lines[i].substring(6, 8) + ", " + lines[i].substring(0, 4);
+          result += `<ul><a href="#" id="` + lines[i] + `">` + date + `</a></ul>`;
+
+        }
+        result += `</li>`;
+        document.getElementById("content").innerHTML += result;
+
+        for (var i = 0; i < lines.length; i++) {
+          document.getElementById(lines[i]).addEventListener("click", () => return_table_matches(lines[i]));
+        }
+      });
+  }
+
   // function to return match info for a specific date
   // to be modified
   function return_table_matches(id) {
     document.getElementById("content").innerHTML =
       "<br><br><h2>League Event Match Results</h2><br><br>";
 
-    fetch("https://yashkaps.github.io/ttleague/data/" + id + "_score.txt")
+    fetch("https://yashkaps.github.io/ttleague/data/" + id + ".csv")
       .then(function (response) {
         return response.text();
       })
@@ -216,7 +259,7 @@ window.onload = function () {
 
         for (var i = 0; i < lines.length - 1; i++) {
           result += "<tr>";
-          var words = lines[i].split("\t");
+          var words = lines[i].split(",");
           for (var j = 0; j < words.length; j++) {
             result += "<td>" + words[j] + "</td>";
           }
@@ -226,35 +269,7 @@ window.onload = function () {
         document.getElementById("content").innerHTML += result;
       });
 
-    fetch("https://yashkaps.github.io/ttleague/data/" + id + "_rating.txt")
-      .then(function (response) {
-        return response.text();
-      })
-      .then(function (data) {
-        document.getElementById("content").innerHTML +=
-          "<br><br><br><h2>Rating Changes</h2>";
-        var result = "<table>";
-        result +=
-          "<tr> <th>Name</th> <th>Begin Rating</th> <th>End Rating</th> </tr>";
-        var length = data.length;
-        var lines = data.split("\n");
 
-        for (var i = 0; i < lines.length - 1; i++) {
-          result += "<tr>";
-          var words = lines[i].split("\t");
-          for (var j = 0; j < words.length; j++) {
-            result += "<td>" + words[j] + "</td>";
-          }
-          result += "</tr>";
-        }
-        document.getElementById("content").innerHTML += "<br><br>";
-
-        var back_to_home =
-          '<br><br><br><a id="initial" href="#">Back to home</a>';
-        document.getElementById("content").innerHTML += result;
-        document.getElementById("content").innerHTML += back_to_home;
-        document.getElementById("initial").addEventListener("click", initial);
-      });
     return false;
   }
 
@@ -263,6 +278,10 @@ window.onload = function () {
     document
       .getElementById("player_list")
       .addEventListener("click", () => return_table_players_common(0));
+
+    document
+      .getElementById("results")
+      .addEventListener("click", display_matches);
     // document.getElementById("0327").addEventListener("click", function () {
     //   return_table_matches("0327");
     // });
