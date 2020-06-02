@@ -236,9 +236,11 @@ window.onload = function () {
         document.getElementById("content").innerHTML += result;
 
         console.log("lines[i] begins here")
-        for (var i = 0; i < lines.length - 2; i++) {
+        for (var i = 0; i < lines.length - 1; i++) {
           console.log(lines[i]);
-          document.getElementById(lines[i]).addEventListener("click", () => return_table_matches(lines[i]));
+          const val = lines[i];
+          const fun = () => return_table_matches(val);
+          document.getElementById(lines[i]).addEventListener("click", fun);
         }
       });
   }
