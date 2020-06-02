@@ -252,12 +252,16 @@ window.onload = function () {
         return response.text();
       })
       .then(function (data) {
-        var result = `<table id="matches">`;
-        result += "<tr> <th>Winner</th> <th>Loser</th> <th>Score</th> </tr>";
-        var length = data.length;
-        var lines = data.split("\n");
+        var big_separation = data.split("\n\n\n");
+        var rating_changes = big_separation[0];
+        var match_results = big_separation[1];
 
-        for (var i = 0; i < lines.length - 1; i++) {
+        var result = `<table id="match_results">`;
+        var lines = match_results.split("\n");
+        var heading = lines[0].split(",");
+        result += "<tr> <th>" + heading[0] + "</th><th>" + heading[1] + "</th><th>" + heading[2] + "</th><th>" + heading[3] + "</th> </tr>";
+
+        for (var i = 1; i < lines.length - 1; i++) {
           result += "<tr>";
           var words = lines[i].split(",");
           for (var j = 0; j < words.length; j++) {
@@ -265,7 +269,24 @@ window.onload = function () {
           }
           result += "</tr>";
         }
+        result += "</table>";
 
+
+
+        result += `<table id="rating_changes">`;
+        lines = rating_changes.split("\n");
+        heading = lines[0].split(",");
+        result += "<tr> <th>" + heading[0] + "</th><th>" + heading[1] + "</th><th>" + heading[2] + "</th><th>" + heading[3] + "</th> </tr>";
+
+        for (var i = 1; i < lines.length - 1; i++) {
+          result += "<tr>";
+          var words = lines[i].split(",");
+          for (var j = 0; j < words.length; j++) {
+            result += "<td>" + words[j] + "</td>";
+          }
+          result += "</tr>";
+        }
+        result += "</table>";
         document.getElementById("content").innerHTML += result;
       });
 
