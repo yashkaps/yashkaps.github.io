@@ -1,0 +1,54 @@
+Name,USATT#,Begin Rating,End Rating,+/-,
+xu zhang,266325,831,1219,388,
+Yash Kapoor,268171,718,733,15,
+Michael Li,86670,1856,1863,7,
+Qiyao Zhou,266139,1822,1815,-7,
+Alex Cook,266857,0,500,500,
+Daniel Zhu,266856,0,436,436,
+Thomas Brosh,229948,712,744,32,
+Titus Kan,266141,742,665,-77,
+jared loadholt,266316,455,449,-6,
+Sowndar Gopi,266137,389,388,-1,
+Rithvik Yarlagadda,263883,758,739,-19,
+Rohit Thakur,266142,426,525,99,
+ben moskowitz,266615,200,288,88,
+Crystal Lin,263553,460,376,-84,
+Chenzhi Zhao,223012,1198,1191,-7,
+Yi-Mu Chen,230085,979,977,-2,
+,,,,,
+,,,,,
+,,,,,
+Winner Name,Winner USATT#,Loser Name,Loser USATT#,Score,+/-
+Rithvik Yarlagadda,263883,Rohit Thakur,266142,2-0,0
+Thomas Brosh,229948,Yash Kapoor,268171,2-0,8
+Yash Kapoor,268171,Titus Kan,266141,2-1,10
+Thomas Brosh,229948,Titus Kan,266141,2-0,10
+Daniel Zhu,266856,Sowndar Gopi,266137,2-1,7
+Daniel Zhu,266856,Crystal Lin,263553,2-1,13
+Thomas Brosh,229948,Rohit Thakur,266142,2-1,1
+Qiyao Zhou,266139,xu zhang,266325,2-0,0
+Alex Cook,266857,ben moskowitz,266615,2-0,1
+Michael Li,86670,Chenzhi Zhao,223012,2-1,0
+Sowndar Gopi,266137,Crystal Lin,263553,2-1,16
+xu zhang,266325,Chenzhi Zhao,223012,2-1,8
+Alex Cook,266857,jared loadholt,266316,2-1,7
+Qiyao Zhou,266139,Chenzhi Zhao,223012,2-0,0
+jared loadholt,266316,ben moskowitz,266615,2-1,1
+Alex Cook,266857,Daniel Zhu,266856,2-0,5
+xu zhang,266325,Yi-Mu Chen,230085,2-1,1
+jared loadholt,266316,Crystal Lin,263553,2-1,8
+Michael Li,86670,xu zhang,266325,2-1,0
+Michael Li,86670,Qiyao Zhou,266139,2-0,7
+Yash Kapoor,268171,Rithvik Yarlagadda,263883,2-1,13
+Chenzhi Zhao,223012,Yi-Mu Chen,230085,2-1,1
+Michael Li,86670,Yi-Mu Chen,230085,2-0,0
+Rohit Thakur,266142,Titus Kan,266141,2-1,50
+Qiyao Zhou,266139,Yi-Mu Chen,230085,2-0,0
+Rithvik Yarlagadda,263883,Titus Kan,266141,2-1,7
+Yash Kapoor,268171,Rohit Thakur,266142,2-1,0
+ben moskowitz,266615,Crystal Lin,263553,2-1,40
+Alex Cook,266857,Sowndar Gopi,266137,2-0,5
+Daniel Zhu,266856,jared loadholt,266316,2-0,13
+jared loadholt,266316,Sowndar Gopi,266137,2-1,5
+Alex Cook,266857,Crystal Lin,263553,2-1,7
+Thomas Brosh,229948,Rithvik Yarlagadda,263883,2-0,13

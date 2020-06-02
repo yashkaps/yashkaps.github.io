@@ -1,0 +1,21 @@
+Name,USATT#,Begin Rating,End Rating,+/-,
+Yi-Mu Chen,230085,996,995,-1,
+Crystal Lin,263553,0,500,500,
+Samuel Dobro,263551,0,600,600,
+Michael Li,86670,1831,1831,0,
+Adnaan Dasoo,263550,0,700,700,
+Nishanth Mallekav,263552,0,800,800,
+Brian Shen,220676,989,1005,16,
+,,,,,
+,,,,,
+,,,,,
+Winner Name,Winner USATT#,Loser Name,Loser USATT#,Score,+/-
+Michael Li,86670,Brian Shen,220676,2-0,0
+Michael Li,86670,Nishanth Mallekav,263552,2-0,0
+Michael Li,86670,Yi-Mu Chen,230085,2-0,0
+Brian Shen,220676,Nishanth Mallekav,263552,2-0,8
+Samuel Dobro,263551,Crystal Lin,263553,2-1,8
+Adnaan Dasoo,263550,Samuel Dobro,263551,2-0,8
+Adnaan Dasoo,263550,Crystal Lin,263553,2-0,8
+Yi-Mu Chen,230085,Nishanth Mallekav,263552,2-0,7
+Brian Shen,220676,Yi-Mu Chen,230085,2-0,8
