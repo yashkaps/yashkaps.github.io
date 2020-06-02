@@ -230,7 +230,7 @@ window.onload = function () {
 
         for (var i = 0; i < lines.length - 1; i++) {
           var date = months[lines[i].substring(4, 6)] + " " + lines[i].substring(6, 8) + ", " + lines[i].substring(0, 4);
-          result += `<div class="events"><a href="#" id="` + lines[i] + `">` + date + `</a></div>`;
+          result += `<div class="events"><a href="#" id="` + lines[i] + `">` + date + `</a></div><br>`;
 
         }
         result += `<br><br>
@@ -301,7 +301,7 @@ window.onload = function () {
           result += "</tr>";
         }
         result += "</table><br><br>";
-        result += `<a id="initial2" href="#">Back to home</a>&emsp;<a id="all_events2" href="#">Back to all events</a>`;
+        result += `<a id="initial2" href="#">Back to home</a><emsp><a id="all_events2" href="#">Back to all events</a>`;
 
         document.getElementById("content").innerHTML += result;
 
