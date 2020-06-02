@@ -202,7 +202,8 @@ window.onload = function () {
   // function to return a table of all matches
   function display_matches() {
     document.getElementById("content").innerHTML =
-      "<br><br><h2>All League Events</h2><br><br>";
+      `<a id="initial" href="#">Back to home</a>
+      <br><br><h2>All League Events</h2><br><br>`;
 
     var months = {
       "01": "January",
@@ -232,10 +233,13 @@ window.onload = function () {
           result += `<ul><a href="#" id="` + lines[i] + `">` + date + `</a></ul>`;
 
         }
-        result += `</li>`;
+        result += `</li><br><br>
+        <a id="initial2" href="#">Back to home</a>`;
         document.getElementById("content").innerHTML += result;
+        document.getElementById("initial").addEventListener("click", initial);
+        document.getElementById("initial2").addEventListener("click", initial);
 
-        console.log("lines[i] begins here")
+        console.log("lines[i] begins here");
         for (var i = 0; i < lines.length - 1; i++) {
           console.log(lines[i]);
           const val = lines[i];
@@ -249,7 +253,8 @@ window.onload = function () {
   // to be modified
   function return_table_matches(id) {
     document.getElementById("content").innerHTML =
-      "<br><br><h2>League Event Match Results</h2><br><br>";
+      `<a id="initial" href="#">Back to home</a>&emsp;<a id="all_events" href="#">Back to all events</a>
+      <br><br><h2>League Event Match Results</h2><br><br>`;
 
     console.log("from return_table_matches");
     console.log("id:" + id);
@@ -295,9 +300,16 @@ window.onload = function () {
           }
           result += "</tr>";
         }
-        result += "</table>";
+        result += "</table><br><br>";
+        result += `<a id="initial2" href="#">Back to home</a><emsp><a id="all_events2" href="#">Back to all events</a>`;
 
         document.getElementById("content").innerHTML += result;
+
+        document.getElementById("initial").addEventListener("click", initial);
+        document.getElementById("initial2").addEventListener("click", initial);
+
+        document.getElementById("all_events").addEventListener("click", display_matches);
+        document.getElementById("all_events2").addEventListener("click", display_matches);
       });
 
 
