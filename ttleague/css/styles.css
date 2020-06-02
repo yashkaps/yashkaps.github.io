@@ -134,3 +134,9 @@ td {
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: rgb(212, 38, 38);
 }
+
+.events {
+  padding: 5px;
+  width: 100%;
+  
+}

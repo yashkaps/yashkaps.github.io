@@ -225,15 +225,15 @@ window.onload = function () {
         return response.text();
       })
       .then(function (data) {
-        var result = `<li>`;
+        var result = ``;
         var lines = data.split("\n");
 
         for (var i = 0; i < lines.length - 1; i++) {
           var date = months[lines[i].substring(4, 6)] + " " + lines[i].substring(6, 8) + ", " + lines[i].substring(0, 4);
-          result += `<ul><a href="#" id="` + lines[i] + `">` + date + `</a></ul>`;
+          result += `<div class="events"><a href="#" id="` + lines[i] + `">` + date + `</a></div>`;
 
         }
-        result += `</li><br><br>
+        result += `<br><br>
         <a id="initial2" href="#">Back to home</a>`;
         document.getElementById("content").innerHTML += result;
         document.getElementById("initial").addEventListener("click", initial);
