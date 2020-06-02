@@ -235,7 +235,8 @@ window.onload = function () {
         result += `</li>`;
         document.getElementById("content").innerHTML += result;
 
-        for (var i = 0; i < lines.length - 1; i++) {
+        console.log("lines[i] begins here")
+        for (var i = 0; i < lines.length - 2; i++) {
           console.log(lines[i]);
           document.getElementById(lines[i]).addEventListener("click", () => return_table_matches(lines[i]));
         }
@@ -248,6 +249,8 @@ window.onload = function () {
     document.getElementById("content").innerHTML =
       "<br><br><h2>League Event Match Results</h2><br><br>";
 
+    console.log("from return_table_matches");
+    console.log("id:" + id);
     fetch("https://yashkaps.github.io/ttleague/data/csv_files/" + id + ".csv")
       .then(function (response) {
         return response.text();
