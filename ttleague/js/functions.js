@@ -301,7 +301,7 @@ window.onload = function () {
           result += "</tr>";
         }
         result += "</table><br><br>";
-        result += `<a id="initial2" href="#">Back to home</a><emsp><a id="all_events2" href="#">Back to all events</a>`;
+        result += `<a id="initial2" href="#">Back to home</a>&emsp;<a id="all_events2" href="#">Back to all events</a>`;
 
         document.getElementById("content").innerHTML += result;
 
