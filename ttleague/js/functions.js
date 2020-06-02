@@ -219,7 +219,7 @@ window.onload = function () {
       "12": "December",
     }
 
-    fetch("https://yashkaps.github.io/ttleague/data/csv_files/file_names.txt")
+    fetch("https://yashkaps.github.io/ttleague/data/csv_files/txt_files/file_names.txt")
       .then(function (response) {
         return response.text();
       })
@@ -253,7 +253,7 @@ window.onload = function () {
 
     console.log("from return_table_matches");
     console.log("id:" + id);
-    fetch("https://raw.githubusercontent.com/yashkaps/yashkaps.github.io/master/ttleague/data/csv_files/" + id + ".csv")
+    fetch("https://yashkaps.github.io/ttleague/data/csv_files/txt_files/" + id + ".csv")
       .then(function (response) {
         return response.text();
       })
