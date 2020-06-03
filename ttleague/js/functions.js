@@ -228,7 +228,7 @@ window.onload = function () {
         var result = ``;
         var lines = data.split("\n");
 
-        for (var i = lines.length - 1; i >= 0; i--) {
+        for (var i = lines.length - 2; i >= 0; i--) {
           var date = months[lines[i].substring(4, 6)] + " " + lines[i].substring(6, 8) + ", " + lines[i].substring(0, 4);
           result += `<div class="events"><a href="#" id="` + lines[i] + `">` + date + `</a></div><br>`;
 
