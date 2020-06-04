@@ -227,7 +227,7 @@ window.onload = function () {
         var file_objs = data;
         var names = [];
         for (var i = 0; i < file_objs.length; i++) {
-          name[i] = file_objs[i].name.substring(0, 8);
+          name.push(file_objs[i].name.substring(0, 8));
         }
         var result = ``;
 
