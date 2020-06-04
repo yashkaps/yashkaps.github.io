@@ -221,7 +221,7 @@ window.onload = function () {
     }
 
 
-    fetch('https://api.github.com/repos/yashkaps/yashkaps.github.io/contents/ttleague/data/csv_files/txt_files?ref=master')
+    fetch('https://api.github.com/repos/yashkaps/yashkaps.github.io/contents/ttleague/data/txt_files?ref=master')
       .then(response => response.json())
       .then(data => {
         var file_objs = data;
@@ -262,7 +262,7 @@ window.onload = function () {
 
     console.log("from return_table_matches");
     console.log("id:" + id);
-    fetch("https://yashkaps.github.io/ttleague/data/csv_files/txt_files/" + id + ".txt")
+    fetch("https://yashkaps.github.io/ttleague/data/txt_files/" + id + ".txt")
       .then(function (response) {
         return response.text();
       })
