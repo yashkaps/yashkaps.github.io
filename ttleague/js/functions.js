@@ -220,16 +220,20 @@ window.onload = function () {
       "12": "December",
     }
 
-    fetch("https://yashkaps.github.io/ttleague/data/csv_files/txt_files/file_names.txt")
-      .then(function (response) {
-        return response.text();
-      })
-      .then(function (data) {
-        var result = ``;
-        var lines = data.split("\n");
 
-        for (var i = lines.length - 2; i >= 0; i--) {
-          var date = months[lines[i].substring(4, 6)] + " " + lines[i].substring(6, 8) + ", " + lines[i].substring(0, 4);
+    fetch('https://api.github.com/repos/yashkaps/yashkaps.github.io/contents/ttleague/data/csv_files/txt_files?ref=master')
+      .then(response => response.json())
+      .then(data => {
+        var file_objs = data;
+        var names = [];
+        for (var i = 0; i < file_objs.length; i++) {
+          name[i] = file_objs[i].name.substring(0, 8);
+        }
+        var result = ``;
+
+        for (var i = file_objs.length - 2; i >= 0; i--) {
+          var name = file_objs[i].name;
+          var date = months[name.substring(4, 6)] + " " + name.substring(6, 8) + ", " + name.substring(0, 4);
           result += `<div class="events"><a href="#" id="` + lines[i] + `">` + date + `</a></div><br>`;
 
         }
@@ -239,12 +243,12 @@ window.onload = function () {
         document.getElementById("initial").addEventListener("click", initial);
         document.getElementById("initial2").addEventListener("click", initial);
 
-        console.log("lines[i] begins here");
-        for (var i = 0; i < lines.length - 1; i++) {
-          console.log(lines[i]);
-          const val = lines[i];
+        console.log("names begin here");
+        for (var i = 0; i < names.length - 1; i++) {
+          console.log(names[i]);
+          const val = names[i];
           const fun = () => return_table_matches(val);
-          document.getElementById(lines[i]).addEventListener("click", fun);
+          document.getElementById(names[i]).addEventListener("click", fun);
         }
       });
   }
