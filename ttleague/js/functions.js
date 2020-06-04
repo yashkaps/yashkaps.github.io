@@ -234,7 +234,7 @@ window.onload = function () {
         for (var i = file_objs.length - 2; i >= 0; i--) {
           var name = file_objs[i].name;
           var date = months[name.substring(4, 6)] + " " + name.substring(6, 8) + ", " + name.substring(0, 4);
-          result += `<div class="events"><a href="#" id="` + lines[i] + `">` + date + `</a></div><br>`;
+          result += `<div class="events"><a href="#" id="` + names[i] + `">` + date + `</a></div><br>`;
 
         }
         result += `<br><br>
