@@ -253,11 +253,12 @@ window.onload = function () {
         document.getElementById("initial").addEventListener("click", initial);
         document.getElementById("initial2").addEventListener("click", initial);
 
+
         console.log("names begin here");
         for (var i = 0; i < names.length - 1; i++) {
           console.log(names[i]);
           const val = names[i];
-          const fun = () => return_table_matches(val);
+          const fun = () => return_table_matches(val, names);
           document.getElementById(names[i]).addEventListener("click", fun);
         }
       });
@@ -265,7 +266,12 @@ window.onload = function () {
 
   // function to return match info for a specific date
   // to be modified
-  function return_table_matches(id) {
+  function return_table_matches(id, names) {
+    if (!names.includes(id)) {
+      document.getElementById("content").innerHTML =
+        `<h1>Error: Page not found</h1><br><h3>Click<a href="#" id="all_events">here</a> to
+        view all events</h3>`;
+    }
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>&emsp;<a id="all_events" href="#">Back to all events</a>
       <br><br><h2>League Event Match Results</h2><br><br>`;
@@ -274,13 +280,14 @@ window.onload = function () {
     console.log("id:" + id);
     fetch("https://yashkaps.github.io/ttleague/data/txt_files/" + id + ".txt")
       .then(function (response) {
-        if (!response.ok) {
-          if (response.status == 404) {
-            throw new Error("File not found");
-          } else {
-            throw new Error("Network response was not ok");
-          }
-        }
+        return response.text();
+        // if (!response.ok) {
+        //   if (response.status == 404) {
+        //     throw new Error("File not found");
+        //   } else {
+        //     throw new Error("Network response was not ok");
+        //   }
+        // }
       })
       .then(function (data) {
         console.log('data before big_separation');
