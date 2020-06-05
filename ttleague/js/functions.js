@@ -354,6 +354,7 @@ window.onload = function () {
   // parses the query string and calls appropriate function based on the query
 
   function parse_query_string(query_string) {
+
     console.log('inside parse_query_string');
 
     if (query_string === "") {
@@ -361,6 +362,8 @@ window.onload = function () {
       return;
     }
     var query = get_query_object(query_string);
+
+    console.log(query);
 
     if (query.players) {
 
