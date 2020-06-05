@@ -175,13 +175,13 @@ window.onload = function () {
       query = document.getElementById("search_box").value;
     } else {
       query = query_str;
-
+      document.getElementById("search_box").value = query_str;
     }
     if (query.length == 0) {
       filter = ratings;
       return_table_players_common(idx);
     } else {
-      document.getElementById("search_box").value = query_str;
+
       filter = ratings.filter(a => a.name.toLowerCase().includes(query.toLowerCase()));
       var result = "";
       result += `<tr> <th id="player_sort">` + player_head[idx] + `</th> <th id="rating_sort">` +
