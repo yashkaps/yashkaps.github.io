@@ -175,7 +175,6 @@ window.onload = function () {
       query = document.getElementById("search_box").value;
     } else {
       query = query_str;
-      document.getElementById("search_box").value = query_str;
     }
     if (query.length == 0) {
       filter = ratings;
@@ -206,6 +205,7 @@ window.onload = function () {
       document.getElementById("player_sort").addEventListener("click", () =>
         (idx != 0) ? return_table_players_az() : return_table_players_za());
     }
+    document.getElementById("search_box").value = query_str;
     document.getElementById("search_box").focus();
   }
 
