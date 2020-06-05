@@ -428,10 +428,10 @@ window.onload = function () {
         query.players = queries_arr2[i][1];
       }
       if (queries_arr2[i][0].localeCompare("events") == 0) {
-        query.players = queries_arr2[i][1];
+        query.events = queries_arr2[i][1];
       }
       if (queries_arr2[i][0].localeCompare("sort") == 0) {
-        query.players = queries_arr2[i][1];
+        query.sort = queries_arr2[i][1];
       }
     }
     console.log(query);
