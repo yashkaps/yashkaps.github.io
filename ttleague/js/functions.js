@@ -243,6 +243,7 @@ window.onload = function () {
       .then(data => {
         var file_objs = data;
         var names = [];
+        var dates = [];
         for (var i = 0; i < file_objs.length; i++) {
           names.push(file_objs[i].name.substring(0, 8));
         }
@@ -251,6 +252,7 @@ window.onload = function () {
         for (var i = file_objs.length - 2; i >= 0; i--) {
           var name = file_objs[i].name;
           var date = months[name.substring(4, 6)] + " " + name.substring(6, 8) + ", " + name.substring(0, 4);
+          dates[i] = date;
           result += `<div class="events"><a href="#" id="` + names[i] + `">` + date + `</a></div><br>`;
 
         }
@@ -264,9 +266,9 @@ window.onload = function () {
         console.log("names begin here");
         for (var i = 0; i < names.length - 1; i++) {
           console.log(names[i]);
-          const val = names[i];
-          // const fun = () => return_table_matches(val, names);
-          const fun = () => return_table_matches(val);
+          const name = names[i];
+          const date = dates[i];
+          const fun = () => return_table_matches(name, date);
           document.getElementById(names[i]).addEventListener("click", fun);
         }
       });
@@ -274,15 +276,16 @@ window.onload = function () {
 
   // function to return match info for a specific date
   // to be modified
-  function return_table_matches(id) {//, names) {
+  function return_table_matches(id, date) {//, names) {
     // if (!names.includes(id)) {
     //   document.getElementById("content").innerHTML =
     //     `<h1>Error: Page not found</h1><br><h3>Click<a href="#" id="all_events">here</a> to
     //     view all events</h3>`;
     // }
+
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>&emsp;<a id="all_events" href="#">Back to all events</a>
-      <br><br><h2>League Event Match Results</h2><br><br>`;
+      <br><br><h2>League Event Match Results for ` + date + `</h2><br><br>`;
 
     console.log("from return_table_matches");
     console.log("id:" + id);
