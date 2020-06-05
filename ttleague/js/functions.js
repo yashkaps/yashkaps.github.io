@@ -402,7 +402,7 @@ window.onload = function () {
       events: null,
       sort: null
     };
-    var queries_arr = query_string.split("&");
+    var queries_arr = query_str.split("&");
     // var queries_arr2 = queries_arr.forEach((str, idx) => queries_arr2[idx] = str.split("="));
     var queries_arr2 = [];
     for (var i = 0; i < queries_arr.length; i++) {
