@@ -403,17 +403,18 @@ window.onload = function () {
       sort: null
     };
     var queries_arr = query_string.split("&");
-    console.log(queries_arr);
+    var queries_arr2 = queries_arr.forEach((str, idx) => queries_arr2[idx] = str.split("="));
+    console.log(queries_arr2);
     for (var i = 0; i < queries_arr.length; i++) {
-      console.log(queries_arr[i][0]);
+      console.log(queries_arr2[i][0]);
       if (queries_arr[i][0] == "players") {
-        query.players = queries_arr[i][1];
+        query.players = queries_arr2[i][1];
       }
       if (queries_arr[i][0] == "events") {
-        query.players = queries_arr[i][1];
+        query.players = queries_arr2[i][1];
       }
       if (queries_arr[i][0] == "sort") {
-        query.players = queries_arr[i][1];
+        query.players = queries_arr2[i][1];
       }
     }
     return query;
