@@ -276,12 +276,7 @@ window.onload = function () {
 
   // function to return match info for a specific date
   // to be modified
-  function return_table_matches(id, date) {//, names) {
-    // if (!names.includes(id)) {
-    //   document.getElementById("content").innerHTML =
-    //     `<h1>Error: Page not found</h1><br><h3>Click<a href="#" id="all_events">here</a> to
-    //     view all events</h3>`;
-    // }
+  function return_table_matches(id, date) {
 
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>&emsp;<a id="all_events" href="#">Back to all events</a>
