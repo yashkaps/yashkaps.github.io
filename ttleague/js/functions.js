@@ -181,6 +181,7 @@ window.onload = function () {
       filter = ratings;
       return_table_players_common(idx);
     } else {
+      document.getElementById("search_box").value = query_str;
       filter = ratings.filter(a => a.name.toLowerCase().includes(query.toLowerCase()));
       var result = "";
       result += `<tr> <th id="player_sort">` + player_head[idx] + `</th> <th id="rating_sort">` +
@@ -196,7 +197,7 @@ window.onload = function () {
           "</td></tr>";
       }
       document.getElementById("ratings").innerHTML = result;
-      document.getElementById("search_box").value = query_str;
+
       document.getElementById("initial").addEventListener("click", initial);
       document.getElementById("initial2").addEventListener("click", initial);
       document.getElementById("search_box").addEventListener("keyup", () => filter_table(idx));
