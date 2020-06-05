@@ -283,6 +283,8 @@ window.onload = function () {
         }
       })
       .then(function (data) {
+        console.log('data before big_separation');
+        console.log(data);
         var big_separation = data.split("Winner Name,Loser Name,Score,+/-");
         var rating_changes = big_separation[0];
         var match_results = big_separation[1];
