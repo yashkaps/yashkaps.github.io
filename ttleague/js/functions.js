@@ -422,15 +422,15 @@ window.onload = function () {
     console.log(queries_arr2);
     for (var i = 0; i < queries_arr.length; i++) {
       console.log(queries_arr2[i][0]);
-      if (queries_arr[i][0] === "players") {
+      if (queries_arr[i][0].localeCompare("players") === 0) {
         console.log('inside if');
         console.log(queries_arr2[i][1]);
         query.players = queries_arr2[i][1];
       }
-      if (queries_arr[i][0] === "events") {
+      if (queries_arr[i][0].localeCompare("events") === 0) {
         query.players = queries_arr2[i][1];
       }
-      if (queries_arr[i][0] === "sort") {
+      if (queries_arr[i][0].localeCompare("sort") === 0) {
         query.players = queries_arr2[i][1];
       }
     }
