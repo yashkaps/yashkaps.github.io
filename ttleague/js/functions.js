@@ -403,6 +403,7 @@ window.onload = function () {
       sort: null
     };
     var queries_arr = query_string.split("&");
+    console.log(queries_arr);
     for (var i = 0; i < queries_arr.length; i++) {
       console.log(queries_arr[i][0]);
       if (queries_arr[i][0] == "players") {
