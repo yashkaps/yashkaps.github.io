@@ -25,7 +25,7 @@ window.onload = function () {
 
   //====================================================================================
   // display the common part of the ratings page
-  function return_table_players_common(idx) {
+  function return_table_players_common(idx, query_string = "") {
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>
       <br><br><h2>Player Ratings</h2><br>`;
@@ -37,7 +37,11 @@ window.onload = function () {
     result += `<br><br><a id="initial2" href="#">Back to home</a>`;
     document.getElementById("content").innerHTML += result;
     document.getElementById("search_box").focus();
-    player_table_fxns[idx]();
+    if (query_string === "") {
+      player_table_fxns[idx]();
+    } else {
+      filter_table(idx, query_string);
+    }
   }
 
   //====================================================================================
@@ -134,7 +138,7 @@ window.onload = function () {
   }
 
   // function to display players and their ratings in with ratings in descending order
-  function return_table_players_rdown() {
+  function return_table_players_rdown(query_str = "") {
 
     var result = "";
     // result += `<br><br><table id="ratings">`;
@@ -165,8 +169,14 @@ window.onload = function () {
 
   //===========================================================================================
   // function for dynamic filter table
-  function filter_table(idx) {
-    var query = document.getElementById("search_box").value;
+  function filter_table(idx, query_str = "") {
+    var query;
+    if (query_str === "") {
+      query = document.getElementById("search_box").value;
+    } else {
+      query = query_str;
+      document.getElementById("search_box").value = query_str;
+    }
     if (query.length == 0) {
       filter = ratings;
       return_table_players_common(idx);
@@ -264,7 +274,13 @@ window.onload = function () {
     console.log("id:" + id);
     fetch("https://yashkaps.github.io/ttleague/data/txt_files/" + id + ".txt")
       .then(function (response) {
-        return response.text();
+        if (!response.ok) {
+          if (response.status == 404) {
+            throw new Error("File not found");
+          } else {
+            throw new Error("Network response was not ok");
+          }
+        }
       })
       .then(function (data) {
         var big_separation = data.split("Winner Name,Loser Name,Score,+/-");
@@ -331,15 +347,69 @@ window.onload = function () {
     document
       .getElementById("results")
       .addEventListener("click", display_matches);
-    // document.getElementById("0327").addEventListener("click", function () {
-    //   return_table_matches("0327");
-    // });
-    // document.getElementById("0328").addEventListener("click", function () {
-    //   return_table_matches("0328");
-    // });
-    // document.getElementById("0329").addEventListener("click", function () {
-    //   return_table_matches("0329");
-    // });
+  }
+
+  //=========================================================================================
+
+  // parses the query string and calls appropriate function based on the query
+
+  function parse_query_string(query_string) {
+
+    if (query_string === "") {
+      initial();
+      return;
+    }
+    var query = get_query_object(query_string);
+
+    if (query.players) {
+
+      if (query.players === "all") {
+        return_table_players_common(0);
+      } else {
+        if (query.sort === "az") {
+          return_table_players_common(0, query.players);
+        }
+        else if (query.sort === "za") {
+          return_table_players_common(1, query.players);
+        }
+        else if (query.sort === "rup") {
+          return_table_players_common(2, query.players);
+        }
+        else if (query.sort === "rdown") {
+          return_table_players_common(3, query.players);
+        } else {
+          return_table_players_common(0);
+        }
+
+      }
+
+    } else if (query.events) {
+      return_table_matches(value);
+    } else {
+      initial();
+    }
+
+  }
+
+  function get_query_object(query_str) {
+    var query = {
+      players: null,
+      events: null,
+      sort: null
+    };
+    var queries_arr = query_string.split("&");
+    for (var i = 0; i < queries_arr.length; i++) {
+      if (queries_arr[i][0] == "players") {
+        query.players = queries_arr[i][1];
+      }
+      if (queries_arr[i][0] == "events") {
+        query.players = queries_arr[i][1];
+      }
+      if (queries_arr[i][0] == "sort") {
+        query.players = queries_arr[i][1];
+      }
+    }
+    return query;
   }
 
   // functions above
@@ -383,5 +453,7 @@ window.onload = function () {
   console.log("hello world");
   console.log(sort_fxns);
 
-  initial();
+  var full_url = window.location.href.toString();
+  var query_string = full_url.split("/?")[1];
+  parse_query_string(query_string);
 };
