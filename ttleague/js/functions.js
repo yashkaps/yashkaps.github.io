@@ -461,5 +461,6 @@ window.onload = function () {
 
   var full_url = window.location.href.toString();
   var query_string = full_url.split("/?")[1];
+  console.log(query_string);
   parse_query_string(query_string);
 };
