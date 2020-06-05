@@ -381,7 +381,7 @@ window.onload = function () {
       if (query.players === "all") {
         return_table_players_common(0);
       } else {
-        if (query.sort === "az") {
+        if (query.sort === "az" || query.sort == null) {
           return_table_players_common(0, query.players);
         }
         else if (query.sort === "za") {
