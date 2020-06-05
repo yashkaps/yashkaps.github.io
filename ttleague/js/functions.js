@@ -412,6 +412,8 @@ window.onload = function () {
     for (var i = 0; i < queries_arr.length; i++) {
       console.log(queries_arr2[i][0]);
       if (queries_arr[i][0] == "players") {
+        console.log('inside if');
+        console.log(queries_arr2[i][1]);
         query.players = queries_arr2[i][1];
       }
       if (queries_arr[i][0] == "events") {
@@ -421,6 +423,7 @@ window.onload = function () {
         query.players = queries_arr2[i][1];
       }
     }
+    console.log(query);
     return query;
   }
 
