@@ -406,7 +406,7 @@ window.onload = function () {
       }
 
     } else if (query.events) {
-      return_table_matches(value);
+      return_table_matches(query.events);
     } else {
       initial();
     }
