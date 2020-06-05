@@ -175,7 +175,7 @@ window.onload = function () {
       query = document.getElementById("search_box").value;
     } else {
       query = query_str;
-      document.getElementById("search_box").value = query_str;
+
     }
     if (query.length == 0) {
       filter = ratings;
@@ -196,6 +196,7 @@ window.onload = function () {
           "</td></tr>";
       }
       document.getElementById("ratings").innerHTML = result;
+      document.getElementById("search_box").value = query_str;
       document.getElementById("initial").addEventListener("click", initial);
       document.getElementById("initial2").addEventListener("click", initial);
       document.getElementById("search_box").addEventListener("keyup", () => filter_table(idx));
