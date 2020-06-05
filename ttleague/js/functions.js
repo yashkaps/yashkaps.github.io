@@ -31,8 +31,12 @@ window.onload = function () {
       <br><br><h2>Player Ratings</h2><br>`;
     var result = "";
     result += `<div style="display: inline-grid">
-    <div style="grid-column: 1/1"><h3>&#x1F50E</h3></div>
-    <div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players..." autofocus></div></div>`;
+    <div style="grid-column: 1/1"><h3>&#x1F50E</h3></div>`;
+    if (query_string === "") {
+      result += `<div style="grid-column: 2/2"><input type="text" id="search_box" placeholder="Search for players..." autofocus></div></div>`;
+    } else {
+      result += `<div style="grid-column: 2/2"><input type="text" id="search_box" value="` + query_string + `" placeholder="Search for players..." autofocus></div></div>`;
+    }
     result += `<br><br><table id="ratings"></table>`;
     result += `<br><br><a id="initial2" href="#">Back to home</a>`;
     document.getElementById("content").innerHTML += result;
@@ -175,6 +179,8 @@ window.onload = function () {
       query = document.getElementById("search_box").value;
     } else {
       query = query_str;
+      // document.getElementById("search_box").value = query_str;
+
     }
     if (query.length == 0) {
       filter = ratings;
@@ -205,7 +211,6 @@ window.onload = function () {
       document.getElementById("player_sort").addEventListener("click", () =>
         (idx != 0) ? return_table_players_az() : return_table_players_za());
     }
-    document.getElementById("search_box").value = query_str;
     document.getElementById("search_box").focus();
   }
 
