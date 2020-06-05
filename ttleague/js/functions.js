@@ -403,7 +403,11 @@ window.onload = function () {
       sort: null
     };
     var queries_arr = query_string.split("&");
-    var queries_arr2 = queries_arr.forEach((str, idx) => queries_arr2[idx] = str.split("="));
+    // var queries_arr2 = queries_arr.forEach((str, idx) => queries_arr2[idx] = str.split("="));
+    var queries_arr2 = [];
+    for (var i = 0; i < queries_arr.length; i++) {
+      queries_arr2[i] = queries_arr[i].split("=");
+    }
     console.log(queries_arr2);
     for (var i = 0; i < queries_arr.length; i++) {
       console.log(queries_arr2[i][0]);
