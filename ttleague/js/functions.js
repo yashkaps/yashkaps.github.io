@@ -354,6 +354,7 @@ window.onload = function () {
   // parses the query string and calls appropriate function based on the query
 
   function parse_query_string(query_string) {
+    console.log('inside parse_query_string');
 
     if (query_string === "") {
       initial();
@@ -392,6 +393,7 @@ window.onload = function () {
   }
 
   function get_query_object(query_str) {
+    console.log('inside get_query_object');
     var query = {
       players: null,
       events: null,
@@ -399,6 +401,7 @@ window.onload = function () {
     };
     var queries_arr = query_string.split("&");
     for (var i = 0; i < queries_arr.length; i++) {
+      console.log(queries_arr[i][0]);
       if (queries_arr[i][0] == "players") {
         query.players = queries_arr[i][1];
       }
