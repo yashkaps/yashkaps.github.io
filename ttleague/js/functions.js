@@ -496,6 +496,9 @@ window.onload = function () {
   console.log(sort_fxns);
 
   var full_url = window.location.href.toString();
+  if (full_url.includes("#")) {
+    full_url = full_url.substring(0, full_url.length - 1);
+  }
   var query_string = full_url.split("/?")[1];
   console.log(query_string);
   parse_query_string(query_string);
