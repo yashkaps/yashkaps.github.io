@@ -280,7 +280,7 @@ window.onload = function () {
 
     document.getElementById("content").innerHTML =
       `<a id="initial" href="#">Back to home</a>&emsp;<a id="all_events" href="#">Back to all events</a>
-      <br><br><h2>League Event Match Results for ` + date + `</h2><br><br>`;
+      <br><br><h2 id="heading">League Event Match Results for ` + date + `</h2><br><br>`;
 
     console.log("from return_table_matches");
     console.log("id:" + id);
@@ -289,10 +289,14 @@ window.onload = function () {
         // return response.text();
         if (!response.ok) {
           if (response.status == 404) {
-            throw new Error("File not found");
+            document.getElementById("heading").innerHTML = "Error: File Not Found";
+            //throw new Error("File not found");
           } else {
-            throw new Error("Network response was not ok");
+            document.getElementById("heading").innerHTML = "Error: Network Response Was Not OK";
+            // throw new Error("Network response was not ok");
           }
+          document.getElementById("initial").addEventListener("click", initial);
+          document.getElementById("all_events").addEventListener("click", display_matches);
         }
         return response.text();
       })
