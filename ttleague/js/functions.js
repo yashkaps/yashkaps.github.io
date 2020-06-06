@@ -499,7 +499,12 @@ window.onload = function () {
   if (full_url.includes("#")) {
     full_url = full_url.replace(/#/g, "");
   }
-  var query_string = full_url.split("/?")[1];
-  console.log(query_string);
-  parse_query_string(query_string);
+
+  if (full_url.includes("/?")) {
+    var query_string = full_url.split("/?")[1];
+    console.log(query_string);
+    parse_query_string(query_string);
+  } else {
+    initial();
+  }
 };
