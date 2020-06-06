@@ -229,7 +229,7 @@ window.onload = function () {
       "12": "December",
     }
 
-    var date = months[name.substring(4, 6)] + " " + name.substring(6, 8) + ", " + name.substring(0, 4);
+    var date = months[id.substring(4, 6)] + " " + id.substring(6, 8) + ", " + id.substring(0, 4);
     return date;
   }
 
@@ -497,7 +497,7 @@ window.onload = function () {
 
   var full_url = window.location.href.toString();
   if (full_url.includes("#")) {
-    full_url = full_url.substring(0, full_url.length - 1);
+    full_url = full_url.replace(/#/g, "");
   }
   var query_string = full_url.split("/?")[1];
   console.log(query_string);
