@@ -284,7 +284,7 @@ window.onload = function () {
   function return_table_matches(id, date = "") {
 
     if (date === "") {
-
+      date = get_date_from_id(id);
     }
 
     document.getElementById("content").innerHTML =
