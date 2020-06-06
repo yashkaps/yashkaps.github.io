@@ -286,7 +286,7 @@ window.onload = function () {
     console.log("id:" + id);
     fetch("https://yashkaps.github.io/ttleague/data/txt_files/" + id + ".txt")
       .then(function (response) {
-        return response.text();
+        // return response.text();
         if (!response.ok) {
           if (response.status == 404) {
             throw new Error("File not found");
