@@ -1,8 +1,0 @@
-#!/bin/csh
-#commits the changes to the master repository
-
-set now = date
-
-git add --all
-git commit -m "Commit at ($now)"
-git push -u -f origin master
