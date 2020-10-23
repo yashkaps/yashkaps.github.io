@@ -117,18 +117,3 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-
-
-/* Set the width of the side navigation to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "200px";
-    document.getElementById("con").style.marginLeft = "300px";
-  document.getElementById("menu").style.marginLeft = "195px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("con").style.marginLeft = "150px";
-  document.getElementById("menu").style.marginLeft = "0px";
-}// JavaScript Document
